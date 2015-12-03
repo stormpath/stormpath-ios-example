@@ -8,6 +8,8 @@
 
 import UIKit
 
+import SVProgressHUD
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,12 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Some UI stuff, this would usually go in a better place, but I'm lazy
         UINavigationBar.appearance().barTintColor = UIColor(red:0.05, green:0.33, blue:0.71, alpha:1.0)
         UINavigationBar.appearance().barStyle = .Default
         UINavigationBar.appearance().translucent = false
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: .Normal)
+        
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
+        SVProgressHUD.setForegroundColor(UIColor(red:0.05, green:0.33, blue:0.71, alpha:1.0))
         
         return true
     }

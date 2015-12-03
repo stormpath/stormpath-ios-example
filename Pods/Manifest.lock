@@ -1,15 +1,19 @@
 PODS:
-  - Stormpath (0.9.0)
+  - Stormpath (0.9.1)
   - SVProgressHUD (1.1.3)
   - TextFieldEffects (1.1.0)
 
 DEPENDENCIES:
-  - Stormpath
+  - Stormpath (from `~/work/sdk/stormpath-sdk-swift`)
   - SVProgressHUD
   - TextFieldEffects
 
+EXTERNAL SOURCES:
+  Stormpath:
+    :path: "~/work/sdk/stormpath-sdk-swift"
+
 SPEC CHECKSUMS:
-  Stormpath: 0100be3e91afd40f22173b13b42fe1d6aaafcfed
+  Stormpath: b9ec6abb3d4670fc7351bb9221d6b3a2736ae28d
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   TextFieldEffects: 8e43fea8836e97be80fc4db27a1596c9e98a26ba
 

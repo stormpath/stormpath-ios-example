@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A2AFD005D8BA232604A816EF16FC53E0F28A59E0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A2AFD005D8BA232604A816EF16FC53E0F28A59E0" : 0,
+    "1BCF3FC0379047159038284CBD18D8BACBA13E71" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C19F8598-1547-495B-A921-6822CA416893",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A2AFD005D8BA232604A816EF16FC53E0F28A59E0" : "better-stormpath-demo\/",
+    "1BCF3FC0379047159038284CBD18D8BACBA13E71" : "..\/sdk\/stormpath-sdk-swift"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SimpleDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SimpleDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stormpath\/stormpath-sdk-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1BCF3FC0379047159038284CBD18D8BACBA13E71"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Adis\/better-stormpath-demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A2AFD005D8BA232604A816EF16FC53E0F28A59E0"
+    }
+  ]
+}
