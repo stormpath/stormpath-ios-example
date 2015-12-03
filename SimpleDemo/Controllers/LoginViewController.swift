@@ -77,7 +77,8 @@ class LoginViewController: UIViewController {
             Stormpath.setUpWithURL(urlString)
         }
         
-        
+        let registerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RegisterViewController")
+        self.navigationController?.pushViewController(registerViewController!, animated: true)
     }
 
 }

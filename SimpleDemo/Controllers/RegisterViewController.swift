@@ -8,12 +8,23 @@
 
 import UIKit
 
+import Stormpath
+import TextFieldEffects
+import SVProgressHUD
+
 class RegisterViewController: UIViewController {
+    
+    @IBOutlet weak var firstNameTextField: HoshiTextField!
+    @IBOutlet weak var lastNameTextField: HoshiTextField!
+    @IBOutlet weak var emailTextField: HoshiTextField!
+    @IBOutlet weak var passwordTextField: HoshiTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = "Register"
+        
+        self.firstNameTextField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +33,35 @@ class RegisterViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func registerActionHandler() {
+        guard self.firstNameTextField.text?.isEmpty == false
+            && self.lastNameTextField.text?.isEmpty == false
+            && self.emailTextField.text?.isEmpty == false
+            && self.passwordTextField.text?.isEmpty == false else {
+            let alertController = UIAlertController.init(title: "Error", message: "Please fill all fields!", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction.init(title: "Ok", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        }
+        
+        let userDictionary = [
+            "givenName": self.firstNameTextField.text!,
+            "surname": self.lastNameTextField.text!,
+            "email": self.emailTextField.text!,
+            "password": self.passwordTextField.text!
+        ]
+        
+        SVProgressHUD.show()
+        
+        Stormpath.register(userDictionary: userDictionary) { (userDictionary, error) -> Void in
+            if error == nil {
+                SVProgressHUD.dismiss()
+            } else {
+                SVProgressHUD.showErrorWithStatus(error!.localizedDescription)
+            }
+        }
     }
-    */
 
 }
