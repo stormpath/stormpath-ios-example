@@ -1,0 +1,6 @@
+framework module Stormpath {
+  umbrella header "Stormpath-umbrella.h"
+
+  export *
+  module * { export * }
+}
