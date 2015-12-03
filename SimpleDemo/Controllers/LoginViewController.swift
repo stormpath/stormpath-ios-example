@@ -26,9 +26,7 @@ class LoginViewController: UIViewController {
         self.urlTextField.placeholder = "Your API URL goes here"
 
         self.usernameTextField.placeholder = "Username"
-        self.usernameTextField.text = "adis@infinum.co"
         self.passwordTextField.placeholder = "Password"
-        self.passwordTextField.text = "Password1"
         
         self.urlTextField.becomeFirstResponder()
         
