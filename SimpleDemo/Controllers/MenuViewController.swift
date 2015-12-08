@@ -26,8 +26,12 @@ class MenuViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: true)
         
         // Show the token
-        if let token = Stormpath.accessToken {
-            self.tokenTextField.text = "..." + token.substringFromIndex(token.endIndex.advancedBy(-10))
+        Stormpath.accessToken { (accessToken, error) -> Void in
+            if error == nil {
+                self.tokenTextField.text = "..." + accessToken!.substringFromIndex(accessToken!.endIndex.advancedBy(-10))
+            } else {
+                SVProgressHUD.showErrorWithStatus(error?.localizedDescription)
+            }
         }
     }
 
@@ -49,14 +53,12 @@ class MenuViewController: UIViewController {
     @IBAction func refreshTokenActionHandler() {
         SVProgressHUD.show()
         
-        Stormpath.refreshAccesToken { (newAccessToken, error) -> Void in
+        Stormpath.accessToken { (accessToken, error) -> Void in
             if error == nil {
                 SVProgressHUD.showSuccessWithStatus("Done!")
-                if let token = newAccessToken {
-                    self.tokenTextField.text = "..." + token.substringFromIndex(token.endIndex.advancedBy(-10))
-                }
+                self.tokenTextField.text = "..." + accessToken!.substringFromIndex(accessToken!.endIndex.advancedBy(-10))
             } else {
-                SVProgressHUD.showErrorWithStatus(error!.localizedDescription)
+                SVProgressHUD.showErrorWithStatus(error?.localizedDescription)
             }
         }
     }

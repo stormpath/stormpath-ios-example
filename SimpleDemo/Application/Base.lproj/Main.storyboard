@@ -172,7 +172,7 @@
                                     <constraint firstAttribute="height" constant="50" id="yxk-55-ROo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="YKE-7x-7wa" customClass="HoshiTextField" customModule="TextFieldEffects">
@@ -439,24 +439,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYH-c9-b8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="461" y="1199"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="2C4-Fq-uap">
-            <objects>
-                <viewController id="iId-rz-vDR" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6Bc-hY-YN2"/>
-                        <viewControllerLayoutGuide type="bottom" id="ur5-pC-pSS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yLX-gu-4Pu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uV5-qt-uUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
 </document>
