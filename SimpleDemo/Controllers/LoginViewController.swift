@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         
         // Set up Stormpath
         Stormpath.setUpWithURL("http://localhost:3000")
-        Stormpath.setLogLevel(.Debug)
+        Stormpath.setLogLevel(.Verbose)
     }
 
     override func didReceiveMemoryWarning() {

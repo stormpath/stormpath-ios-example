@@ -21,7 +21,7 @@
 		577EE460DF28A075AD4B2F5AEE1D567A /* Stormpath-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 707BE32FC49CF19FA212C5E9BC0BF28C /* Stormpath-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		676F293A39AB6B04260BB308BD3F183E /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0497D3BFE1D9E2AB9661A746D562C7 /* YokoTextField.swift */; };
 		6A08A3E21F2A4CE4C8A2D4BB5DF9DD5A /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D54DBD0DBEAB8B501EF45C2CD1BE7 /* MinoruTextField.swift */; };
-		7CA4841B6D493F434CBE9EAEF363A952 /* URLPathService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E33F7377CAD3BF69C27EBE7BC29C85 /* URLPathService.swift */; };
+		7CA4841B6D493F434CBE9EAEF363A952 /* URLPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E33F7377CAD3BF69C27EBE7BC29C85 /* URLPaths.swift */; };
 		802ED53FA45F76300D5B5FBF67CAFE38 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C320D3ACCE81D7B4990147432EBA8 /* MadokaTextField.swift */; };
 		85B287C9C1D075FF4C0D5CD8F836324E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
 		8B111B7AD960D1127B36C9EFC3FE4C18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
@@ -88,7 +88,7 @@
 		707BE32FC49CF19FA212C5E9BC0BF28C /* Stormpath-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-umbrella.h"; sourceTree = "<group>"; };
 		7116D56B1E74EB1DF97C32B1FDA46FE0 /* Stormpath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stormpath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7647077283AFBA178269A4E910F4E49A /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
-		78E33F7377CAD3BF69C27EBE7BC29C85 /* URLPathService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLPathService.swift; sourceTree = "<group>"; };
+		78E33F7377CAD3BF69C27EBE7BC29C85 /* URLPaths.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLPaths.swift; sourceTree = "<group>"; };
 		78FDAB06F4BEAF9097A229D6C486121D /* Pods-SimpleDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SimpleDemo.modulemap"; sourceTree = "<group>"; };
 		7C08741BE58366C674C2BCE55B063E81 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EF1D7912B54654A1F3FF054B72F74C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -323,7 +323,7 @@
 			children = (
 				16E9616A2C813661D184C54CD5DBFC64 /* APIService.swift */,
 				4D21062512CD286FF9ACE997EA4C18B6 /* Logger.swift */,
-				78E33F7377CAD3BF69C27EBE7BC29C85 /* URLPathService.swift */,
+				78E33F7377CAD3BF69C27EBE7BC29C85 /* URLPaths.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -533,7 +533,7 @@
 				95F9099ADF6AD1AE4704D42189D68E0B /* Logger.swift in Sources */,
 				0302B926375A48D0A63AA5217C80099C /* Stormpath-dummy.m in Sources */,
 				0A182008000558E5FAF5E0E976235EF4 /* Stormpath.swift in Sources */,
-				7CA4841B6D493F434CBE9EAEF363A952 /* URLPathService.swift in Sources */,
+				7CA4841B6D493F434CBE9EAEF363A952 /* URLPaths.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
