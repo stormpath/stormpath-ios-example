@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14D684B417CC22EAE210C89BCD065DF6 /* Stormpath-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FADB36AF7D0A9933C7F3EA6834FC82B2 /* Stormpath-dummy.m */; };
+		0D8DCB544E381E6FCA1A0F3EFE657219 /* Stormpath-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F82038B30B5624E266ACC803FDDF3B8 /* Stormpath-dummy.m */; };
 		14F166CD61B8A4F307B00ED9F57AAA54 /* Pods-SimpleDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A128FA2434BD36B30F61E99B5DF0F9 /* Pods-SimpleDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		178C62E76779C98152EDBF54157C098E /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC9B96EF08D0C12C64D0553F522726 /* SVIndefiniteAnimatedView.m */; };
 		17D9C2B0CC91F9845468AFFB8396C10A /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D406665A1A92BE1C4C1230D0023CCC37 /* IsaoTextField.swift */; };
 		19008D4F7F2864C64899D2E2F42BF01B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
 		1BA3FD78312595AFA11E69DF9A76224F /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A789E5B29DEDFEC70AF87AC8A4B38A /* SVProgressHUD-dummy.m */; };
 		240929751E84C78920E89C9472227EC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		25CC261CB043F2D81EE3B3D6B8CA400E /* URLPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C2BF17EB9014E8D756A2E1EA5A427 /* URLPaths.swift */; };
 		300D0A6EC0F8C82AD8C22EB8E243938B /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDA34590B7B8D00F1BAEA1D5C8D /* AkiraTextField.swift */; };
-		307566BF291B9D85AAD9589FE4236EB6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E28F58DE313E9E45BFC1DD39F821B9 /* APIService.swift */; };
+		3254ABC0711D41F085004AF0A55BD4C4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D59B304F2F4AA046BF7B5CFF14510B /* Logger.swift */; };
 		37CE8382C97999BA57D0DA1349B657D1 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 433110D59AB86A990B88BF19B9BDB651 /* SVProgressHUD.bundle */; };
+		47D976ED44BA4B0EC7EAC8F2DAA5A09F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B94FA5A7C7D9C946FF0F048BFC0D8A8 /* APIService.swift */; };
 		49A33CDD46D48425F550AA6CCAF61ADF /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 461EFE5756CCAC398AC36F9AEDA04EC2 /* TextFieldEffects-dummy.m */; };
-		577EE460DF28A075AD4B2F5AEE1D567A /* Stormpath-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BFE7BBB36D944D87A76303F32417 /* Stormpath-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		577EE460DF28A075AD4B2F5AEE1D567A /* Stormpath-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1330838826DD6D55B0A0CE9F7B60E38E /* Stormpath-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		676F293A39AB6B04260BB308BD3F183E /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CCE31EA015E1D3D0F473230823EF17 /* YokoTextField.swift */; };
 		6A08A3E21F2A4CE4C8A2D4BB5DF9DD5A /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BFA5F9CFEE561A96AC8FD81490EC9 /* MinoruTextField.swift */; };
+		7915401E10BD41FA7E6641BB1903186F /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ED14058CC57F27A0849BE930A161DC /* KeychainService.swift */; };
 		802ED53FA45F76300D5B5FBF67CAFE38 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA014A18E9F9AFF4B51077F84F258067 /* MadokaTextField.swift */; };
 		85B287C9C1D075FF4C0D5CD8F836324E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
-		887F4F7AF245DC82AB64B6E22F59AAE5 /* URLPathService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C5C1FDEE47AF574F26BBA3F6ED9B7 /* URLPathService.swift */; };
 		8B111B7AD960D1127B36C9EFC3FE4C18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		A68A148F4A09696C9B2D074F5A6A7192 /* Stormpath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A137D0F9C8B54A7C46F91FA7B8336 /* Stormpath.swift */; };
-		ACEDA76DBCFA34958811101288E2091C /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EF93FD6C59D649F92700B2AAD347BD /* KeychainService.swift */; };
-		B80D1E78158184BBD262A549207E745C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D407104EBAA7C506F614851FCB4AC /* Logger.swift */; };
 		C3F0745CF9C74DBD0375E64420493017 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB8B64D9E9888A9ED48E6B09EC0D93 /* HoshiTextField.swift */; };
 		C68288AF509F81600AB1D2765C05906E /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F086AFE78683397D6BEA75A91F86D3B /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB58759F8B43AAF385791160EA96937D /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A92940730B9040B4247A7F6876DB8F97 /* SVProgressHUD.m */; };
+		CBC49D69E4D5CB1CC3F39B14AD3E9780 /* Stormpath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194C13A0C9B826B8BE3B742AE2C39E0 /* Stormpath.swift */; };
 		D0FF64217868DBB05AE04FC82231B7ED /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63871E96465858346C7C8833FCA39F77 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E636C9878F9CF56DDDE86D4B867682CB /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2E514683C96D2A2206C31C7654858 /* JiroTextField.swift */; };
 		E84AA363D36B1B1CC0853F5AF6C97092 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563179F58022E95F796A1251A81DA3 /* TextFieldsEffects.swift */; };
@@ -70,38 +70,38 @@
 		0935FB864CDA2940ACB76B5B958C3F8E /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		0E01FF5E87CE930E65FC81FA71762196 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
 		0F086AFE78683397D6BEA75A91F86D3B /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		1194C13A0C9B826B8BE3B742AE2C39E0 /* Stormpath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stormpath.swift; path = Stormpath/Core/Stormpath.swift; sourceTree = "<group>"; };
+		1330838826DD6D55B0A0CE9F7B60E38E /* Stormpath-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-umbrella.h"; sourceTree = "<group>"; };
 		1A563179F58022E95F796A1251A81DA3 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		23ED14058CC57F27A0849BE930A161DC /* KeychainService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainService.swift; path = Stormpath/Keychain/KeychainService.swift; sourceTree = "<group>"; };
 		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2F82038B30B5624E266ACC803FDDF3B8 /* Stormpath-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stormpath-dummy.m"; sourceTree = "<group>"; };
 		34541F56F45CF498E98B0E81D82C5F0D /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
 		3BB021D68D90D16239E7163BC770166E /* Pods-SimpleDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleDemo-resources.sh"; sourceTree = "<group>"; };
 		41AF2698F37A7007BD09B735EEE4723F /* Pods-SimpleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		433110D59AB86A990B88BF19B9BDB651 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		461EFE5756CCAC398AC36F9AEDA04EC2 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
-		489D407104EBAA7C506F614851FCB4AC /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Stormpath/Networking/Logger.swift; sourceTree = "<group>"; };
 		48A789E5B29DEDFEC70AF87AC8A4B38A /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		4A7A137D0F9C8B54A7C46F91FA7B8336 /* Stormpath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stormpath.swift; path = Stormpath/Core/Stormpath.swift; sourceTree = "<group>"; };
-		4D3C5C1FDEE47AF574F26BBA3F6ED9B7 /* URLPathService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLPathService.swift; path = Stormpath/Networking/URLPathService.swift; sourceTree = "<group>"; };
 		50A128FA2434BD36B30F61E99B5DF0F9 /* Pods-SimpleDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleDemo-umbrella.h"; sourceTree = "<group>"; };
 		50BC9B96EF08D0C12C64D0553F522726 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		55EF93FD6C59D649F92700B2AAD347BD /* KeychainService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainService.swift; path = Stormpath/Keychain/KeychainService.swift; sourceTree = "<group>"; };
 		628885ED7736D0A677BB4C4017CDD0B0 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63871E96465858346C7C8833FCA39F77 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		655B27C567D870CD00E865FFFC4CDE93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66AB8B64D9E9888A9ED48E6B09EC0D93 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
 		6E03401D77A384DE80032F3A88F42D23 /* Pods-SimpleDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleDemo-dummy.m"; sourceTree = "<group>"; };
-		70BB59DE84007ECA3408B7AE7D7AE625 /* Stormpath.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Stormpath.modulemap; sourceTree = "<group>"; };
 		70CCE31EA015E1D3D0F473230823EF17 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
 		7116D56B1E74EB1DF97C32B1FDA46FE0 /* Stormpath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stormpath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		74E28F58DE313E9E45BFC1DD39F821B9 /* APIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = Stormpath/Networking/APIService.swift; sourceTree = "<group>"; };
+		71D59B304F2F4AA046BF7B5CFF14510B /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Stormpath/Networking/Logger.swift; sourceTree = "<group>"; };
 		78FDAB06F4BEAF9097A229D6C486121D /* Pods-SimpleDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SimpleDemo.modulemap"; sourceTree = "<group>"; };
+		7B94FA5A7C7D9C946FF0F048BFC0D8A8 /* APIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = Stormpath/Networking/APIService.swift; sourceTree = "<group>"; };
 		7EF1D7912B54654A1F3FF054B72F74C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FAB8A79F245F13013426B7E3981B56B /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		8251626A2B1A0E9C3B82B49E4C004539 /* Stormpath.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stormpath.xcconfig; sourceTree = "<group>"; };
 		8870F021F8E4F0B07ECB515C7F728AC4 /* Pods-SimpleDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleDemo-frameworks.sh"; sourceTree = "<group>"; };
 		8D97EDDA34590B7B8D00F1BAEA1D5C8D /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
 		98A849CB93EA002C449E2ACBE023D411 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99E9641B540782C7795967BE026B4170 /* Stormpath-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-prefix.pch"; sourceTree = "<group>"; };
 		9A34CDE23B423DBD93AB02A7D678E382 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
-		9AD7BFE7BBB36D944D87A76303F32417 /* Stormpath-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-umbrella.h"; sourceTree = "<group>"; };
+		9E94FA03EEE975D2089E06268193AFE2 /* Stormpath.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stormpath.xcconfig; sourceTree = "<group>"; };
+		A7F0D69464656BC3C4C1D64776B1ADB6 /* Stormpath-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-prefix.pch"; sourceTree = "<group>"; };
 		A92940730B9040B4247A7F6876DB8F97 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		AA014A18E9F9AFF4B51077F84F258067 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
 		AFCC69810D5B6F7C6BADD303C9D4A848 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
@@ -110,15 +110,15 @@
 		B39CB5B5F5096E6BD1E193D123177000 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C0F319B7B98CA967295029205F1370F9 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		C30D2A9D316479D962E3DE8A9B3FF116 /* Stormpath.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Stormpath.modulemap; sourceTree = "<group>"; };
 		C6BD01260E2461F2C48BD88A1BAC2496 /* Pods_SimpleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C36AC1952EC6DAA74227692DD01879 /* Pods-SimpleDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		D406665A1A92BE1C4C1230D0023CCC37 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
 		D9A4739D5536652EDAAECE2D72B86080 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		E51D33C63988E574344ED7AA6862625A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E69BB38A36B5D2E220D69E68898B8AB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9C2BF17EB9014E8D756A2E1EA5A427 /* URLPaths.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLPaths.swift; path = Stormpath/Networking/URLPaths.swift; sourceTree = "<group>"; };
 		F1C2E514683C96D2A2206C31C7654858 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
 		F2ACD7E00EB7E700787F1D3F4AD1EF93 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FADB36AF7D0A9933C7F3EA6834FC82B2 /* Stormpath-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stormpath-dummy.m"; sourceTree = "<group>"; };
 		FAE454215AD8D9C2EA76EB19FC2566FC /* Pods-SimpleDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FE0AA5D26B01319AC1165B00515C4268 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
 		FF2BFA5F9CFEE561A96AC8FD81490EC9 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
@@ -222,6 +222,20 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		55A5CDF3C94BA794BCC1FD11D2FD7B91 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				655B27C567D870CD00E865FFFC4CDE93 /* Info.plist */,
+				C30D2A9D316479D962E3DE8A9B3FF116 /* Stormpath.modulemap */,
+				9E94FA03EEE975D2089E06268193AFE2 /* Stormpath.xcconfig */,
+				2F82038B30B5624E266ACC803FDDF3B8 /* Stormpath-dummy.m */,
+				A7F0D69464656BC3C4C1D64776B1ADB6 /* Stormpath-prefix.pch */,
+				1330838826DD6D55B0A0CE9F7B60E38E /* Stormpath-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Stormpath";
+			sourceTree = "<group>";
+		};
 		620315D2A84366A0D3EB174CD4E3A0F2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,20 +248,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SVProgressHUD";
-			sourceTree = "<group>";
-		};
-		75B88F90A1742C21A52C226FA355141A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E51D33C63988E574344ED7AA6862625A /* Info.plist */,
-				70BB59DE84007ECA3408B7AE7D7AE625 /* Stormpath.modulemap */,
-				8251626A2B1A0E9C3B82B49E4C004539 /* Stormpath.xcconfig */,
-				FADB36AF7D0A9933C7F3EA6834FC82B2 /* Stormpath-dummy.m */,
-				99E9641B540782C7795967BE026B4170 /* Stormpath-prefix.pch */,
-				9AD7BFE7BBB36D944D87A76303F32417 /* Stormpath-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Stormpath";
 			sourceTree = "<group>";
 		};
 		78107CD3DB0A0C9C5E8D5F559778445B /* SVProgressHUD */ = {
@@ -302,11 +302,24 @@
 		A18DBAFADC2A55457D8CD46C19D85670 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F9553779198897079566775C191120B3 /* Stormpath */,
+				A9BF53114CA389895C7833120F455C6F /* Stormpath */,
 				78107CD3DB0A0C9C5E8D5F559778445B /* SVProgressHUD */,
 				17D526A20BC945A15DE72E03FEB91EAB /* TextFieldEffects */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9BF53114CA389895C7833120F455C6F /* Stormpath */ = {
+			isa = PBXGroup;
+			children = (
+				7B94FA5A7C7D9C946FF0F048BFC0D8A8 /* APIService.swift */,
+				23ED14058CC57F27A0849BE930A161DC /* KeychainService.swift */,
+				71D59B304F2F4AA046BF7B5CFF14510B /* Logger.swift */,
+				1194C13A0C9B826B8BE3B742AE2C39E0 /* Stormpath.swift */,
+				EB9C2BF17EB9014E8D756A2E1EA5A427 /* URLPaths.swift */,
+				55A5CDF3C94BA794BCC1FD11D2FD7B91 /* Support Files */,
+			);
+			path = Stormpath;
 			sourceTree = "<group>";
 		};
 		AF89991AB6389D4068DB319E66161C70 /* Targets Support Files */ = {
@@ -315,19 +328,6 @@
 				43E45270D009C228B87F0EBE64A45F58 /* Pods-SimpleDemo */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F9553779198897079566775C191120B3 /* Stormpath */ = {
-			isa = PBXGroup;
-			children = (
-				74E28F58DE313E9E45BFC1DD39F821B9 /* APIService.swift */,
-				55EF93FD6C59D649F92700B2AAD347BD /* KeychainService.swift */,
-				489D407104EBAA7C506F614851FCB4AC /* Logger.swift */,
-				4A7A137D0F9C8B54A7C46F91FA7B8336 /* Stormpath.swift */,
-				4D3C5C1FDEE47AF574F26BBA3F6ED9B7 /* URLPathService.swift */,
-				75B88F90A1742C21A52C226FA355141A /* Support Files */,
-			);
-			path = Stormpath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +391,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FDE83948E2973CD62A36B5BB3EFF438 /* Build configuration list for PBXNativeTarget "Stormpath" */;
 			buildPhases = (
-				F619DB3C57D64E8B90758CFCD9F39C68 /* Sources */,
+				84F9B67580F3958A93FD872BECEC8195 /* Sources */,
 				1051EAF7CC60790BDD70D89A7F38840E /* Frameworks */,
 				C4D1F9C25CEFF92B45FB08627BF4BAD5 /* Headers */,
 			);
@@ -501,6 +501,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84F9B67580F3958A93FD872BECEC8195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D976ED44BA4B0EC7EAC8F2DAA5A09F /* APIService.swift in Sources */,
+				7915401E10BD41FA7E6641BB1903186F /* KeychainService.swift in Sources */,
+				3254ABC0711D41F085004AF0A55BD4C4 /* Logger.swift in Sources */,
+				0D8DCB544E381E6FCA1A0F3EFE657219 /* Stormpath-dummy.m in Sources */,
+				CBC49D69E4D5CB1CC3F39B14AD3E9780 /* Stormpath.swift in Sources */,
+				25CC261CB043F2D81EE3B3D6B8CA400E /* URLPaths.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86C9D93A584D647F5EFEA67D06B5667C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -516,19 +529,6 @@
 				E84AA363D36B1B1CC0853F5AF6C97092 /* TextFieldsEffects.swift in Sources */,
 				676F293A39AB6B04260BB308BD3F183E /* YokoTextField.swift in Sources */,
 				F77538474191FE22FE143C87A86820DC /* YoshikoTextField.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F619DB3C57D64E8B90758CFCD9F39C68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				307566BF291B9D85AAD9589FE4236EB6 /* APIService.swift in Sources */,
-				ACEDA76DBCFA34958811101288E2091C /* KeychainService.swift in Sources */,
-				B80D1E78158184BBD262A549207E745C /* Logger.swift in Sources */,
-				14D684B417CC22EAE210C89BCD065DF6 /* Stormpath-dummy.m in Sources */,
-				A68A148F4A09696C9B2D074F5A6A7192 /* Stormpath.swift in Sources */,
-				887F4F7AF245DC82AB64B6E22F59AAE5 /* URLPathService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +616,7 @@
 		};
 		35AFF375DFEC1371B6BFC12A7CD04C48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8251626A2B1A0E9C3B82B49E4C004539 /* Stormpath.xcconfig */;
+			baseConfigurationReference = 9E94FA03EEE975D2089E06268193AFE2 /* Stormpath.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -643,7 +643,7 @@
 		};
 		93ACEA6E2D1179CE85EBF07B1A2AFD02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8251626A2B1A0E9C3B82B49E4C004539 /* Stormpath.xcconfig */;
+			baseConfigurationReference = 9E94FA03EEE975D2089E06268193AFE2 /* Stormpath.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
