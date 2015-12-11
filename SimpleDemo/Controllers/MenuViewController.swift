@@ -81,7 +81,7 @@ class MenuViewController: UIViewController {
                             Stormpath.me(completionHandler: { (userDictionary, error) -> Void in
                                 if error == nil {
                                     // Great, it worked, the user never noticed his token expired
-                                    self.showUserDataWithDictionary(userData!)
+                                    self.showUserDataWithDictionary(userDictionary!)
                                     SVProgressHUD.showSuccessWithStatus("Done!")
                                 } else {
                                     // Although you might have been tempted to make a recursion, the failure here means you have to log out the user and prompt them to log in again
