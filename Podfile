@@ -1,9 +1,8 @@
 use_frameworks!
 
 target 'SimpleDemo' do
-
-    pod 'Stormpath', :path => '~/work/sdk/stormpath-sdk-swift'
-#    pod "Stormpath"
+    
+    pod "Stormpath"
     pod "TextFieldEffects"
     pod "SVProgressHUD"
 

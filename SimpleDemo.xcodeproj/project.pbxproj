@@ -242,6 +242,7 @@
 				TargetAttributes = {
 					494432051C107D37007C02AC = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 5F5M64F878;
 					};
 					494432191C107D37007C02AC = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -499,10 +500,14 @@
 			baseConfigurationReference = 7209EE018115C1F792B86BD4 /* Pods-SimpleDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SimpleDemo/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stormpath.SimpleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8685a26f-52c3-410b-a0a4-b53c6ced8492";
 			};
 			name = Debug;
 		};
@@ -511,10 +516,14 @@
 			baseConfigurationReference = CA83B77E9D4A76AD8D01CBE4 /* Pods-SimpleDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Infinum D.O.O.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Infinum D.O.O.";
 				INFOPLIST_FILE = "$(SRCROOT)/SimpleDemo/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stormpath.SimpleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8685a26f-52c3-410b-a0a4-b53c6ced8492";
 			};
 			name = Release;
 		};
