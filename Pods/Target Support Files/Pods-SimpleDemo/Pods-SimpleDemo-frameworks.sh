@@ -84,11 +84,17 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-SimpleDemo/Bolts.framework"
+  install_framework "Pods-SimpleDemo/FBSDKCoreKit.framework"
+  install_framework "Pods-SimpleDemo/FBSDKLoginKit.framework"
   install_framework "Pods-SimpleDemo/SVProgressHUD.framework"
   install_framework "Pods-SimpleDemo/Stormpath.framework"
   install_framework "Pods-SimpleDemo/TextFieldEffects.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-SimpleDemo/Bolts.framework"
+  install_framework "Pods-SimpleDemo/FBSDKCoreKit.framework"
+  install_framework "Pods-SimpleDemo/FBSDKLoginKit.framework"
   install_framework "Pods-SimpleDemo/SVProgressHUD.framework"
   install_framework "Pods-SimpleDemo/Stormpath.framework"
   install_framework "Pods-SimpleDemo/TextFieldEffects.framework"

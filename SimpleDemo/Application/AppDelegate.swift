@@ -9,6 +9,8 @@
 import UIKit
 
 import SVProgressHUD
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,16 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Some UI stuff, this would usually go in a better place, but I'm lazy
-        UINavigationBar.appearance().barTintColor = UIColor(red:0.05, green:0.33, blue:0.71, alpha:1.0)
-        UINavigationBar.appearance().barStyle = .Default
-        UINavigationBar.appearance().translucent = false
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: .Normal)
-        
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
-        
-        SVProgressHUD.setForegroundColor(UIColor(red:0.05, green:0.33, blue:0.71, alpha:1.0))
+        self.setUpUI()
         
         return true
     }
@@ -55,7 +48,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
 
+    // MARK: Just some UI
+    
+    func setUpUI() {
+        UINavigationBar.appearance().barTintColor = UIColor(red:0.05, green:0.33, blue:0.71, alpha:1.0)
+        UINavigationBar.appearance().barStyle = .Default
+        UINavigationBar.appearance().translucent = false
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: .Normal)
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        SVProgressHUD.setForegroundColor(UIColor(red:0.05, green:0.33, blue:0.71, alpha:1.0))
+    }
 
 }
 

@@ -1,10 +1,14 @@
 use_frameworks!
 
 target 'SimpleDemo' do
-    
+
     pod "Stormpath"
     pod "TextFieldEffects"
     pod "SVProgressHUD"
+
+    # Social logins
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
 
 end
 
