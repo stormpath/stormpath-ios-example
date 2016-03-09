@@ -156,8 +156,7 @@
 				DF904C7A1C763CEC00BE53E5 /* RegisterViewController.swift */,
 				DF904C7C1C763CFC00BE53E5 /* ProfileViewController.swift */,
 			);
-			name = "Stormpath Swift Example";
-			path = "Stormpath iOS Example";
+			path = "Stormpath Swift Example";
 			sourceTree = "<group>";
 		};
 		EDA6E77A7AC6C9A634CE2A24 /* Pods */ = {
@@ -546,7 +545,7 @@
 			baseConfigurationReference = 71A773A32DCC30837EE1678E /* Pods-Stormpath Swift Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Stormpath iOS Example/Info.plist";
+				INFOPLIST_FILE = "Stormpath Swift Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stormpath.Stormpath-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -558,7 +557,7 @@
 			baseConfigurationReference = 00EA019A523578B1BA4A98AF /* Pods-Stormpath Swift Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Stormpath iOS Example/Info.plist";
+				INFOPLIST_FILE = "Stormpath Swift Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stormpath.Stormpath-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
