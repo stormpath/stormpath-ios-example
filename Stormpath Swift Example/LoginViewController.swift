@@ -27,13 +27,23 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func login(sender: AnyObject) {
-        Stormpath.sharedSession.login(emailTextField.text!, password: passwordTextField.text!) { (success, error) -> Void in
-            guard success else {
-                self.showAlert(withTitle: "Error", message: error?.localizedDescription)
-                return
-            }
-            self.loadAccount(andDisplayFailure: true)
+        Stormpath.sharedSession.login(emailTextField.text!, password: passwordTextField.text!, completionHandler: loginCompletionHandler)
+    }
+    
+    @IBAction func loginWithFacebook(sender: AnyObject) {
+        Stormpath.sharedSession.login(socialProvider: .Facebook, completionHandler: loginCompletionHandler)
+    }
+    
+    @IBAction func loginWithGoogle(sender: AnyObject) {
+        Stormpath.sharedSession.login(socialProvider: .Google, completionHandler: loginCompletionHandler)
+    }
+    
+    func loginCompletionHandler(success: Bool, error: NSError?) {
+        guard success else {
+            self.showAlert(withTitle: "Error", message: error?.localizedDescription ?? "")
+            return
         }
+        self.loadAccount(andDisplayFailure: true)
     }
     
     // Helper method that loads the /me endpoint (and optionally displays a

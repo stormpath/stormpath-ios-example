@@ -33,13 +33,29 @@
 }
 
 - (IBAction)loginButtonPressed:(id)sender {
-    [[Stormpath sharedSession] login:_emailTextField.text password:_passwordTextField.text completionHandler:^(BOOL success, NSError * _Nullable error) {
-        if(error) {
-            [self showAlertWithTitle:@"Error" message:error.localizedDescription];
-            return;
-        }
-        [self loadAccountWithFailureAlert:YES];
+    [[Stormpath sharedSession] login:self.emailTextField.text password:self.passwordTextField.text completionHandler:^(BOOL success, NSError * _Nullable error) {
+        [self loginCompletionHandler:success error:error];
     }];
+}
+
+- (IBAction)loginWithFacebookButtonPressed:(id)sender {
+    [[Stormpath sharedSession] loginWithSocialProvider:StormpathSocialProviderFacebook completionHandler:^(BOOL success, NSError * _Nullable error) {
+        [self loginCompletionHandler:success error:error];
+    }];
+}
+
+- (IBAction)loginWithGoogleButtonPressed:(id)sender {
+    [[Stormpath sharedSession] loginWithSocialProvider:StormpathSocialProviderGoogle completionHandler:^(BOOL success, NSError * _Nullable error) {
+        [self loginCompletionHandler:success error:error];
+    }];
+}
+
+- (void)loginCompletionHandler:(BOOL)success error:(NSError *)error {
+    if(error) {
+        [self showAlertWithTitle:@"Error" message:error.localizedDescription];
+        return;
+    }
+    [self loadAccountWithFailureAlert:YES];
 }
 
 // Helper method that loads the /me endpoint (and optionally displays a

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Stormpath-Swift.h"
 
 @interface AppDelegate ()
 
@@ -40,6 +41,14 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    return [[Stormpath sharedSession] application:app openURL:url options:options];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [[Stormpath sharedSession] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
 @end
