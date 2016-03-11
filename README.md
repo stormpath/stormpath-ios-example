@@ -1,6 +1,6 @@
 # Stormpath iOS Example App
 
-This is the example app for the [Stormpath iOS SDK](https://github.com/stormpath/stormpath-sdk-swift).
+This is the example app for the [Stormpath iOS SDK](https://github.com/stormpath/stormpath-sdk-ios).
 
 # Usage
 

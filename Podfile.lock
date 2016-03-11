@@ -1,10 +1,10 @@
 PODS:
-  - Stormpath (1.1)
+  - Stormpath (1.2)
 
 DEPENDENCIES:
-  - Stormpath (~> 1.1)
+  - Stormpath (~> 1.2)
 
 SPEC CHECKSUMS:
-  Stormpath: 4114f031f357963329b4e75be72966d16d5e526b
+  Stormpath: 2cc5b19d774d6fe3d33b542019ca906b89391ea5
 
 COCOAPODS: 0.39.0
