@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         helloLabel.text = "Hello, \(account.fullName)!"
@@ -47,14 +47,14 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func refreshAccessToken(sender: AnyObject) {
+    @IBAction func refreshAccessToken(_ sender: AnyObject) {
         Stormpath.sharedSession.refreshAccessToken { (success, error) -> Void in
             self.viewWillAppear(false)
         }
     }
 
-    @IBAction func logout(sender: AnyObject) {
+    @IBAction func logout(_ sender: AnyObject) {
         Stormpath.sharedSession.logout()
-        dismissViewControllerAnimated(false, completion: nil)
+        dismiss(animated: false, completion: nil)
     }
 }

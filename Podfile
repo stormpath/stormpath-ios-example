@@ -4,7 +4,7 @@
 use_frameworks!
 
 def pods
-pod "Stormpath", '~> 1.2'
+pod 'Stormpath', '~> 2.0'
 end
 
 target 'Stormpath Swift Example' do

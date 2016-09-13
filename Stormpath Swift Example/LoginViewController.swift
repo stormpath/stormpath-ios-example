@@ -26,19 +26,19 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func login(sender: AnyObject) {
+    @IBAction func login(_ sender: AnyObject) {
         Stormpath.sharedSession.login(emailTextField.text!, password: passwordTextField.text!, completionHandler: loginCompletionHandler)
     }
     
-    @IBAction func loginWithFacebook(sender: AnyObject) {
-        Stormpath.sharedSession.login(socialProvider: .Facebook, completionHandler: loginCompletionHandler)
+    @IBAction func loginWithFacebook(_ sender: AnyObject) {
+        Stormpath.sharedSession.login(socialProvider: .facebook, completionHandler: loginCompletionHandler)
     }
     
-    @IBAction func loginWithGoogle(sender: AnyObject) {
-        Stormpath.sharedSession.login(socialProvider: .Google, completionHandler: loginCompletionHandler)
+    @IBAction func loginWithGoogle(_ sender: AnyObject) {
+        Stormpath.sharedSession.login(socialProvider: .google, completionHandler: loginCompletionHandler)
     }
     
-    func loginCompletionHandler(success: Bool, error: NSError?) {
+    func loginCompletionHandler(_ success: Bool, error: NSError?) {
         guard success else {
             self.showAlert(withTitle: "Error", message: error?.localizedDescription ?? "")
             return
@@ -48,9 +48,9 @@ class LoginViewController: UIViewController {
     
     // Helper method that loads the /me endpoint (and optionally displays a
     // failure alert)
-    private func loadAccount(andDisplayFailure failureAlert: Bool = false) {
+    fileprivate func loadAccount(andDisplayFailure failureAlert: Bool = false) {
         Stormpath.sharedSession.me({ (account, error) -> Void in
-            guard let account = account where error == nil else {
+            guard let account = account , error == nil else {
                 if failureAlert {
                     self.showAlert(withTitle: "Error", message: error?.localizedDescription)
                 }
@@ -61,13 +61,13 @@ class LoginViewController: UIViewController {
     }
     
     // Helper method that takes an account object & shows the profile page
-    func showProfileForAccount(account: Account) {
-        let profileViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("profile") as! ProfileViewController
+    func showProfileForAccount(_ account: Account) {
+        let profileViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profile") as! ProfileViewController
         profileViewController.account = account
-        presentViewController(profileViewController, animated: false, completion: nil)
+        present(profileViewController, animated: false, completion: nil)
     }
     
-    @IBAction func resetPassword(sender: AnyObject) {
+    @IBAction func resetPassword(_ sender: AnyObject) {
         Stormpath.sharedSession.resetPassword(emailTextField.text!) { (success, error) -> Void in
             if success {
                 self.showAlert(withTitle: "Success", message: "Password Reset Email Sent!")
@@ -81,8 +81,8 @@ class LoginViewController: UIViewController {
 // Helper extension to display alerts easily. 
 extension UIViewController {
     func showAlert(withTitle title: String, message: String?) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }

@@ -19,7 +19,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Stop, target: self, action: "exit")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(RegisterViewController.exit))
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +27,7 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func register(sender: AnyObject) {
+    @IBAction func register(_ sender: AnyObject) {
         // Create the registration model
         let newUser = RegistrationModel(email: emailTextField.text!, password: passwordTextField.text!)
         newUser.givenName = firstNameTextField.text!
@@ -35,13 +35,13 @@ class RegisterViewController: UIViewController {
         
         // Register the new user
         Stormpath.sharedSession.register(newUser) { (account, error) -> Void in
-            guard let account = account where error == nil else {
+            guard let account = account , error == nil else {
                 self.showAlert(withTitle: "Error", message: error?.localizedDescription)
                 return
             }
             
             // If they need to verify their email, display alert
-            if account.status == .Unverified {
+            if account.status == .unverified {
                 self.showAlert(withTitle: "Registration Complete!", message: "Please check your email to verify your account")
             }
             // Otherwise, log them in & close registration window
@@ -56,7 +56,7 @@ class RegisterViewController: UIViewController {
     }
     
     func exit() {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 
 }
