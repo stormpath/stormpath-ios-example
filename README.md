@@ -23,7 +23,7 @@ Open up `Stormpath iOS Example.xcworkspace` and run the app. The app has two tar
 The sample app is currently configured to run against `http://localhost:3000/` (the default for the express sample project), but you can change this by adding a line of code in the AppDelegate:
 
 ```Swift
-StormpathConfiguration.defaultConfiguration.APIURL = NSURL(string: "http://localhost:3000")!
+StormpathConfiguration.defaultConfiguration.APIURL = URL(string: "http://localhost:3000")!
 ```
 
 ```Objective-C

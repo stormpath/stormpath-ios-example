@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7170C431FC3C241BE92A450A /* Pods_Stormpath_Swift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6239A1AD0ACE88479E8383 /* Pods_Stormpath_Swift_Example.framework */; };
-		D918B5D8D6A7DA52C733BC64 /* Pods_Stormpath_ObjC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF14487369838C5F99A9A8A0 /* Pods_Stormpath_ObjC_Example.framework */; };
+		18AA61448835705FB3945802 /* Pods_Stormpath_Swift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6729F3369563D59A20CB75EB /* Pods_Stormpath_Swift_Example.framework */; };
 		DF6B38FC1C7E31B100177A98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6B38FB1C7E31B100177A98 /* main.m */; };
 		DF6B38FF1C7E31B100177A98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6B38FE1C7E31B100177A98 /* AppDelegate.m */; };
 		DF6B39051C7E31B100177A98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6B39031C7E31B100177A98 /* Main.storyboard */; };
@@ -25,13 +24,16 @@
 		DF904C7B1C763CEC00BE53E5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF904C7A1C763CEC00BE53E5 /* RegisterViewController.swift */; };
 		DF904C7D1C763CFC00BE53E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF904C7C1C763CFC00BE53E5 /* ProfileViewController.swift */; };
 		DFFA80441C7E381B00701AA8 /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA80431C7E381B00701AA8 /* UIViewController+Alerts.m */; };
+		E72BF18E1FD229BB2BE3C145 /* Pods_Stormpath_ObjC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6BBFA0088C9D6962DE2171 /* Pods_Stormpath_ObjC_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04B1598A31E48F44FB64BD8B /* Pods-Stormpath Swift Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormpath Swift Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stormpath Swift Example/Pods-Stormpath Swift Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2A6239A1AD0ACE88479E8383 /* Pods_Stormpath_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stormpath_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FFB8B87B9FBB454FD1BA070 /* Pods-Stormpath Swift Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormpath Swift Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stormpath Swift Example/Pods-Stormpath Swift Example.release.xcconfig"; sourceTree = "<group>"; };
-		BF14487369838C5F99A9A8A0 /* Pods_Stormpath_ObjC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stormpath_ObjC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB18F1870982BB14A875E7F /* Pods-Stormpath ObjC Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormpath ObjC Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stormpath ObjC Example/Pods-Stormpath ObjC Example.release.xcconfig"; sourceTree = "<group>"; };
+		6729F3369563D59A20CB75EB /* Pods_Stormpath_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stormpath_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A6BBFA0088C9D6962DE2171 /* Pods_Stormpath_ObjC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stormpath_ObjC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC27C0F7A1FD8EE39721A7F /* Pods-Stormpath ObjC Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormpath ObjC Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stormpath ObjC Example/Pods-Stormpath ObjC Example.debug.xcconfig"; sourceTree = "<group>"; };
+		91C1B86223B9D87D2C15018D /* Pods-Stormpath Swift Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormpath Swift Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stormpath Swift Example/Pods-Stormpath Swift Example.release.xcconfig"; sourceTree = "<group>"; };
+		A3BBF287FECA0905979B236C /* Pods-Stormpath Swift Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormpath Swift Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stormpath Swift Example/Pods-Stormpath Swift Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DF6B38F81C7E31B100177A98 /* Stormpath ObjC Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stormpath ObjC Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6B38FB1C7E31B100177A98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF6B38FD1C7E31B100177A98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,8 +59,6 @@
 		DF904C7C1C763CFC00BE53E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DFFA80421C7E381B00701AA8 /* UIViewController+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alerts.h"; sourceTree = "<group>"; };
 		DFFA80431C7E381B00701AA8 /* UIViewController+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alerts.m"; sourceTree = "<group>"; };
-		EA69FAF0943A920CAF49CE93 /* Pods-Stormpath ObjC Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormpath ObjC Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stormpath ObjC Example/Pods-Stormpath ObjC Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F1ED6077CD61EA4357230303 /* Pods-Stormpath ObjC Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stormpath ObjC Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stormpath ObjC Example/Pods-Stormpath ObjC Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D918B5D8D6A7DA52C733BC64 /* Pods_Stormpath_ObjC_Example.framework in Frameworks */,
+				E72BF18E1FD229BB2BE3C145 /* Pods_Stormpath_ObjC_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,29 +74,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7170C431FC3C241BE92A450A /* Pods_Stormpath_Swift_Example.framework in Frameworks */,
+				18AA61448835705FB3945802 /* Pods_Stormpath_Swift_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B4AF2FB94272EECBC2B1B9E7 /* Pods */ = {
+		3DB8D3466D2DD960DB7C9D76 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EA69FAF0943A920CAF49CE93 /* Pods-Stormpath ObjC Example.debug.xcconfig */,
-				F1ED6077CD61EA4357230303 /* Pods-Stormpath ObjC Example.release.xcconfig */,
-				04B1598A31E48F44FB64BD8B /* Pods-Stormpath Swift Example.debug.xcconfig */,
-				6FFB8B87B9FBB454FD1BA070 /* Pods-Stormpath Swift Example.release.xcconfig */,
+				8DC27C0F7A1FD8EE39721A7F /* Pods-Stormpath ObjC Example.debug.xcconfig */,
+				1BB18F1870982BB14A875E7F /* Pods-Stormpath ObjC Example.release.xcconfig */,
+				A3BBF287FECA0905979B236C /* Pods-Stormpath Swift Example.debug.xcconfig */,
+				91C1B86223B9D87D2C15018D /* Pods-Stormpath Swift Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DE13C17026DDD313C461C4F8 /* Frameworks */ = {
+		D8B300CC5556B5335A449183 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF14487369838C5F99A9A8A0 /* Pods_Stormpath_ObjC_Example.framework */,
-				2A6239A1AD0ACE88479E8383 /* Pods_Stormpath_Swift_Example.framework */,
+				7A6BBFA0088C9D6962DE2171 /* Pods_Stormpath_ObjC_Example.framework */,
+				6729F3369563D59A20CB75EB /* Pods_Stormpath_Swift_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,8 +137,8 @@
 				DF904C651C763CD300BE53E5 /* Stormpath Swift Example */,
 				DF6B38F91C7E31B100177A98 /* Stormpath ObjC Example */,
 				DF904C641C763CD300BE53E5 /* Products */,
-				B4AF2FB94272EECBC2B1B9E7 /* Pods */,
-				DE13C17026DDD313C461C4F8 /* Frameworks */,
+				3DB8D3466D2DD960DB7C9D76 /* Pods */,
+				D8B300CC5556B5335A449183 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,12 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF6B390E1C7E31B100177A98 /* Build configuration list for PBXNativeTarget "Stormpath ObjC Example" */;
 			buildPhases = (
-				224B593BECDFDDA44E44462B /* [CP] Check Pods Manifest.lock */,
+				A21C89455E1E92D070D1D8E0 /* [CP] Check Pods Manifest.lock */,
 				DF6B38F41C7E31B100177A98 /* Sources */,
 				DF6B38F51C7E31B100177A98 /* Frameworks */,
 				DF6B38F61C7E31B100177A98 /* Resources */,
-				0B5C4510C7E50EE7DFCC7FB6 /* [CP] Embed Pods Frameworks */,
-				4E9DEBA4226F8258A202494F /* [CP] Copy Pods Resources */,
+				258B85333C0B0203C1586A77 /* [CP] Embed Pods Frameworks */,
+				1642CC29D5C7701916FC316E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,12 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF904C751C763CD300BE53E5 /* Build configuration list for PBXNativeTarget "Stormpath Swift Example" */;
 			buildPhases = (
-				1C4AEFFBB28BC8E864EB13F0 /* [CP] Check Pods Manifest.lock */,
+				0DFE1BBCDC9D6FC5E1EE259D /* [CP] Check Pods Manifest.lock */,
 				DF904C5F1C763CD300BE53E5 /* Sources */,
 				DF904C601C763CD300BE53E5 /* Frameworks */,
 				DF904C611C763CD300BE53E5 /* Resources */,
-				72A443F4FEFFC970BDC9FF4B /* [CP] Embed Pods Frameworks */,
-				C8D241CB40943337C7AC1CE6 /* [CP] Copy Pods Resources */,
+				5782546C843AA363BA2C0D23 /* [CP] Embed Pods Frameworks */,
+				503888A64E8E94DD01D57397 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,6 +225,7 @@
 					};
 					DF904C621C763CD300BE53E5 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2KJYZ9RG2S;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -272,22 +273,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B5C4510C7E50EE7DFCC7FB6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stormpath ObjC Example/Pods-Stormpath ObjC Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1C4AEFFBB28BC8E864EB13F0 /* [CP] Check Pods Manifest.lock */ = {
+		0DFE1BBCDC9D6FC5E1EE259D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,25 +285,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		224B593BECDFDDA44E44462B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4E9DEBA4226F8258A202494F /* [CP] Copy Pods Resources */ = {
+		1642CC29D5C7701916FC316E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -332,7 +303,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stormpath ObjC Example/Pods-Stormpath ObjC Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		72A443F4FEFFC970BDC9FF4B /* [CP] Embed Pods Frameworks */ = {
+		258B85333C0B0203C1586A77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stormpath ObjC Example/Pods-Stormpath ObjC Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		503888A64E8E94DD01D57397 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stormpath Swift Example/Pods-Stormpath Swift Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5782546C843AA363BA2C0D23 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,19 +348,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stormpath Swift Example/Pods-Stormpath Swift Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C8D241CB40943337C7AC1CE6 /* [CP] Copy Pods Resources */ = {
+		A21C89455E1E92D070D1D8E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stormpath Swift Example/Pods-Stormpath Swift Example-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -429,7 +430,7 @@
 /* Begin XCBuildConfiguration section */
 		DF6B390C1C7E31B100177A98 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA69FAF0943A920CAF49CE93 /* Pods-Stormpath ObjC Example.debug.xcconfig */;
+			baseConfigurationReference = 8DC27C0F7A1FD8EE39721A7F /* Pods-Stormpath ObjC Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2KJYZ9RG2S;
@@ -443,7 +444,7 @@
 		};
 		DF6B390D1C7E31B100177A98 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1ED6077CD61EA4357230303 /* Pods-Stormpath ObjC Example.release.xcconfig */;
+			baseConfigurationReference = 1BB18F1870982BB14A875E7F /* Pods-Stormpath ObjC Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2KJYZ9RG2S;
@@ -542,10 +543,10 @@
 		};
 		DF904C761C763CD300BE53E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04B1598A31E48F44FB64BD8B /* Pods-Stormpath Swift Example.debug.xcconfig */;
+			baseConfigurationReference = A3BBF287FECA0905979B236C /* Pods-Stormpath Swift Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2KJYZ9RG2S;
 				INFOPLIST_FILE = "Stormpath Swift Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -557,10 +558,10 @@
 		};
 		DF904C771C763CD300BE53E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FFB8B87B9FBB454FD1BA070 /* Pods-Stormpath Swift Example.release.xcconfig */;
+			baseConfigurationReference = 91C1B86223B9D87D2C15018D /* Pods-Stormpath Swift Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2KJYZ9RG2S;
 				INFOPLIST_FILE = "Stormpath Swift Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

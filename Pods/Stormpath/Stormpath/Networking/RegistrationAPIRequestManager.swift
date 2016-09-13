@@ -12,38 +12,31 @@ class RegistrationAPIRequestManager: APIRequestManager {
     var account: RegistrationModel
     var callback: StormpathAccountCallback
     
-    init(withURL url: NSURL, newAccount account: RegistrationModel, callback: StormpathAccountCallback) {
+    init(withURL url: URL, newAccount account: RegistrationModel, callback: @escaping StormpathAccountCallback) {
         self.account = account
         self.callback = callback
         super.init(withURL: url)
     }
     
     override func prepareForRequest() {
-        var registrationDictionary: [String: AnyObject] = account.customFields
-        let accountDictionary = ["username": account.username, "email": account.email, "password": account.password, "givenName": account.givenName, "surname": account.surname]
-        
-        for (key, value) in accountDictionary {
-            registrationDictionary[key] = value
-        }
-        
-        request.HTTPMethod = "POST"
-        request.HTTPBody = try? NSJSONSerialization.dataWithJSONObject(registrationDictionary, options: [])
+        request.httpMethod = "POST"
+        request.httpBody = account.jsonData
     }
     
-    override func requestDidFinish(data: NSData, response: NSHTTPURLResponse) {
+    override func requestDidFinish(_ data: Data, response: HTTPURLResponse) {
         if let user = Account(fromJSON: data) {
             performCallback(user, error: nil)
         } else {
-            performCallback(error: StormpathError.APIResponseError)
+            performCallback(StormpathError.APIResponseError)
         }
     }
     
-    override func performCallback(error error: NSError?) {
+    override func performCallback(_ error: NSError?) {
         performCallback(nil, error: error)
     }
     
-    func performCallback(account: Account?, error: NSError?) {
-        dispatch_async(dispatch_get_main_queue()) {
+    func performCallback(_ account: Account?, error: NSError?) {
+        DispatchQueue.main.async {
             self.callback(account, error)
         }
     }
@@ -97,5 +90,18 @@ public class RegistrationModel: NSObject {
     public init(email: String, password: String) {
         self.email = email
         self.password = password
+    }
+    
+    var jsonData: Data? {
+        var registrationDictionary: [String: Any] = customFields
+        let accountDictionary = ["username": username, "email": email, "password": password, "givenName": givenName, "surname": surname]
+        
+        for (key, value) in accountDictionary {
+            if value != "" {
+                registrationDictionary[key] = value
+            }
+        }
+        
+        return try? JSONSerialization.data(withJSONObject: registrationDictionary, options: [])
     }
 }

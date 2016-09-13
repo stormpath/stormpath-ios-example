@@ -3,25 +3,30 @@
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Stormpath.svg?style=flat)](http://cocoapods.org/pods/Stormpath)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/stormpath/stormpath-sdk-ios)
 [![License](https://img.shields.io/cocoapods/l/Stormpath.svg?style=flat)](http://cocoapods.org/pods/Stormpath)
-[![codebeat badge](https://codebeat.co/badges/0038aa1f-d481-4ad0-a244-3a6d803c3dbe)](https://codebeat.co/projects/github-com-stormpath-stormpath-sdk-ios)
+[![codebeat badge](https://codebeat.co/badges/6b76c7c6-f924-40f6-8ce0-42d165cf6a17)](https://codebeat.co/projects/github-com-stormpath-stormpath-sdk-ios)
+[![Slack Status](https://talkstormpath.shipit.xyz/badge.svg)](https://talkstormpath.shipit.xyz)
 
-The iOS Library for [Stormpath](https://stormpath.com/), a framework for authentication & authorization. 
+The iOS SDK for [Stormpath](https://stormpath.com/), a framework for authentication & authorization. 
 
 # Requirements
 
-iOS 8.0+ / Xcode 7.1+
+iOS 8.0+ / Xcode 8.0+ (Swift 3)
 
 # Set up
 
 Stormpath's iOS SDK allows developers utilizing Stormpath to quickly integrate authentication and token management into their app. 
 
-This SDK will not send direct requests to Stormpath, and instead assumes that you'll have a backend that conforms to the [Stormpath Framework Spec](https://github.com/stormpath/stormpath-framework-spec). With one of these backends, you'll be able to configure Stormpath so it fits your needs. 
-
 We're constantly iterating and improving the SDK, so please don't hesitate to send us your feedback! You can reach us via support@stormpath.com, or on the issue tracker for feature requests. 
 
 ## Setting up a Compatible Backend
 
-Stormpath's framework integrations plug into popular web frameworks and expose pre-built API endpoints that you can customize. The two backends that are currently compatible with the iOS SDK are: [express-stormpath](https://github.com/stormpath/express-stormpath) (v3.0) and [stormpath-laravel](https://github.com/stormpath/stormpath-laravel) (v0.3). 
+Stormpath's framework integrations plug into popular web frameworks and expose pre-built API endpoints that you can customize. These web framework integrations are:
+
+* [Express](https://docs.stormpath.com/nodejs/express/latest/)
+* [Laravel](https://docs.stormpath.com/php/laravel/latest/)
+* [.NET Core](https://docs.stormpath.com/dotnet/aspnetcore/latest/)
+* [Spring / Java Servlet](https://docs.stormpath.com/java/)
+* [Ruby on Rails](https://github.com/stormpath/stormpath-rails)
 
 If you're just testing, it's pretty quick to set up a server using the [express sample project](https://github.com/stormpath/express-stormpath-sample-project). 
 
@@ -32,13 +37,17 @@ If you're just testing, it's pretty quick to set up a server using the [express 
 Stormpath is available through [CocoaPods](https://cocoapods.org/). Add this line to your `Podfile` to begin:
 
 ```ruby
-pod 'Stormpath', '~> 1.2'
+pod 'Stormpath', '~> 2.0'
 ```
 
-Don't forget to uncomment use_frameworks! as well:
+For older versions of Swift:
 
 ```ruby
-use_frameworks!
+# Swift 2.3; Xcode 8
+pod 'Stormpath', :git => 'https://github.com/Stormpath/stormpath-sdk-ios.git', :branch => 'swift2.3'
+
+# Swift 2.2; Xcode 7
+pod 'Stormpath', '~> 1.3'
 ```
 
 ## Carthage
@@ -46,7 +55,7 @@ use_frameworks!
 To use Stormpath with [Carthage](https://github.com/Carthage/Carthage), specify it in your `Cartfile`:
 
 ```ogdl
-github "stormpath/stormpath-sdk-ios" ~> 1.2
+github "stormpath/stormpath-sdk-ios" ~> 2.0
 ```
 
 # Usage
@@ -74,13 +83,13 @@ Stormpath's default configuration will attempt to connect to `http://localhost:3
 Swift:
 
 ```Swift
-StormpathConfiguration.defaultConfiguration.APIURL = NSURL(string: "http://localhost:3000")!
+StormpathConfiguration.defaultConfiguration.APIURL = URL(string: "http://localhost:3000")!
 ```
 
 Objective-C:
 
 ```Objective-C
-[StormpathConfiguration defaultConfiguration].APIURL = [[NSURL alloc] initWithString:@"http://localhost:3000"];
+[StormpathConfiguration defaultConfiguration].APIURL = [[URL alloc] initWithString:@"http://localhost:3000"];
 ```
 
 *Note: As of the iOS 9 SDK, Apple has enabled App Transport Security by default. If you're developing against an `http` endpoint, you'll need to disable it. For production, you should always be using `https` for your API endpoints.*
@@ -108,7 +117,6 @@ Stormpath.sharedSession.register(account) { (account, error) -> Void in
 }
 ```
 
-
 *Note: Stormpath callbacks always happen on the main thread, so you can make UI changes directly in the callback.*
 
 ## Logging in
@@ -125,6 +133,8 @@ Stormpath.sharedSession.login("user@example.com", password: "ExamplePassword") {
 }
 ```
 
+**Note: Logging in does not work in the iOS 10 simulator because of a simulator bug. However, logging in works on actual devices, or older simulators, like the iOS 9 simulator. To test your app, use the iOS 9 simulator, or run the code on a physical device. See this [Stack Overflow](http://stackoverflow.com/questions/38456471/secitemadd-always-returns-error-34018-in-xcode-8-beta-gm-in-ios-10-simulator) thread for more information on the simulator bug.**
+
 ## Logging in with Facebook or Google
 
 Stormpath also supports logging in with Facebook or Google. There are two flows for enabling this:
@@ -132,18 +142,19 @@ Stormpath also supports logging in with Facebook or Google. There are two flows 
 1. Let Stormpath handle the Facebook / Google Login.
 2. Use the Facebook / Google iOS SDK to get an access token, and pass it to Stormpath to log in.
 
-We've made it extremely easy to set up social login without using the Facebook / Google SDK, but if you need to use their SDKs for more features besides logging in, you should use flow #2 (and skip directly to "Advanced ____ Login"). 
+We've made it extremely easy to set up social login without using the Facebook / Google SDK, but if you need to use their SDKs for more features besides logging in, you should use flow #2 (and skip directly to [Using the Facebook or Google SDK](#using-the-google-or-facebook-sdk)). 
 
 ### Setting up your AppDelegate
 
 In your Xcode project, add the following methods to your `AppDelegate`:
 
 ```Swift
-// Only needed for iOS 9
+// iOS 9+ link handler
 func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
     return Stormpath.sharedSession.application(app, openURL: url, options: options)
 }
-    
+
+// iOS 8 and below link handler. Needed if you want to support older iOS
 func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
     return Stormpath.sharedSession.application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
 }
@@ -160,7 +171,7 @@ Finally, open up your App's Xcode project and go to the project's info tab. Unde
 Then, you can initiate the login screen by calling: 
 
 ```Swift
-Stormpath.sharedSession.login(socialProvider: .Facebook) { (success, error) -> Void in
+Stormpath.sharedSession.login(socialProvider: .facebook) { (success, error) -> Void in
     // This callback is the same as the regular Stormpath.login callback. 
     // If the user cancels the login, the login was never started, and
     // this callback will not be called.
@@ -178,7 +189,7 @@ Finally, open up your App's Xcode project and go to the project's info tab. Unde
 Then, you can initiate the login screen by calling: 
 
 ```Swift
-Stormpath.sharedSession.login(socialProvider: .Google) { (success, error) -> Void in
+Stormpath.sharedSession.login(socialProvider: .google) { (success, error) -> Void in
 	// Same callback as above
 }
 ```
@@ -188,14 +199,18 @@ Stormpath.sharedSession.login(socialProvider: .Google) { (success, error) -> Voi
 If you're using the [Facebook SDK](https://developers.facebook.com/docs/facebook-login/ios) or [Google SDK](https://developers.google.com/identity/sign-in/ios/) for your app, follow their setup instructions instead. Once you successfully sign in with their SDK, utilize the following methods to send your access token to Stormpath, and log in your user: 
 
 ```Swift
-Stormpath.sharedSession.login(socialProvider: .Facebook, accessToken: FBSDKAccessToken.currentAccessToken().tokenString) { (success, error) -> Void in
+Stormpath.sharedSession.login(socialProvider: .facebook, accessToken: FBSDKAccessToken.currentAccessToken().tokenString) { (success, error) -> Void in
 	// Same callback as above
 }
 
-Stormpath.sharedSession.login(socialProvider: .Google, accessToken: GIDSignIn.sharedInstance().currentUser.authentication.accessToken) { (success, error) -> Void in
+Stormpath.sharedSession.login(socialProvider: .google, accessToken: GIDSignIn.sharedInstance().currentUser.authentication.accessToken) { (success, error) -> Void in
 	// Same callback as above
 }
 ```
+
+### GitHub and LinkedIn login
+
+GitHub and LinkedIn login are not officially supported in the iOS SDK, but there is a way to implement it. [See this example project](https://github.com/edjiang/stormpath-mobile-linkedin-example) for more details. 
 
 ## Using the Access Token
 
@@ -204,7 +219,7 @@ You can utilize the access token to access any of your API endpoints that requir
 ### NSURLSession
 
 ```Swift
-let request = NSMutableURLRequest(URL: url)
+var request = URLRequest(URL: url)
 request.setValue("Bearer " + accessToken, forHTTPHeaderField: "Authorization")
 ```
 
@@ -212,7 +227,7 @@ request.setValue("Bearer " + accessToken, forHTTPHeaderField: "Authorization")
 
 ```Swift
 let headers = ["Authorization": "Bearer " + accessToken]
-Alamofire.request(.GET, url, headers: headers)
+Alamofire.request(url, method: .get, headers: headers)
 ```
 
 ## Account data

@@ -11,17 +11,27 @@ import Foundation
 /// Social Login Providers
 @objc public enum StormpathSocialProvider: Int {
     /// Facebook Login
-    case Facebook
+    case facebook
     
     /// Google Login
-    case Google
+    case google
+    
+    /// LinkedIn Login
+    case linkedIn
+    
+    /// GitHub Login
+    case gitHub
     
     func stringValue() -> String {
         switch self {
-        case .Facebook:
+        case .facebook:
             return "facebook"
-        case .Google:
+        case .google:
             return "google"
+        case .linkedIn:
+            return "linkedin"
+        case .gitHub:
+            return "github"
         }
     }
 }
