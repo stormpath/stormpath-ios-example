@@ -20,7 +20,7 @@ git clone https://github.com/stormpath/stormpath-ios-example.git
 
 Open up `Stormpath iOS Example.xcworkspace` and run the app. The app has two targets: Stormpath ObjC Example, and Stormpath Swift Example. You can run each example individually and look at the code to see how they work. 
 
-The sample app is currently configured to run against `http://localhost:3000/` (the default for the express sample project), but you can change this by adding a line of code in the AppDelegate:
+The sample app is currently configured to run against `https://stormpathnotes.herokuapp.com/` (a test server we have running), but you can change this by adding a line of code in the AppDelegate:
 
 ```Swift
 StormpathConfiguration.defaultConfiguration.APIURL = URL(string: "http://localhost:3000")!
@@ -32,7 +32,7 @@ StormpathConfiguration.defaultConfiguration.APIURL = URL(string: "http://localho
 
 ## Social Login
 
-To use Log in with Facebook / Google in this app, you'll need to take a few additional steps:
+The sample app is configured with the Facebook and Google logins for our demo server, but to use this with your own server, you'll need to take a few additional steps:
 
 ### Setting up Facebook Login
 
