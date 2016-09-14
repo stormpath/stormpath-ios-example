@@ -44,11 +44,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool {
-        return Stormpath.sharedSession.application(app, openURL: url, options: options)
+        return Stormpath.sharedSession.application(app, open: url, options: options)
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        return Stormpath.sharedSession.application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+        return Stormpath.sharedSession.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
     }
 
 }

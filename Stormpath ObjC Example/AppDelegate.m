@@ -44,11 +44,11 @@
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
-    return [[Stormpath sharedSession] application:app openURL:url options:options];
+    return [[Stormpath sharedSession] application:app open:url options:options];
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [[Stormpath sharedSession] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    return [[Stormpath sharedSession] application:application open:url sourceApplication:sourceApplication annotation:annotation];
 }
 
 @end

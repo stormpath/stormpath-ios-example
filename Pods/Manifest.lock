@@ -1,11 +1,11 @@
 PODS:
-  - Stormpath (2.0)
+  - Stormpath (2.0.1)
 
 DEPENDENCIES:
   - Stormpath (~> 2.0)
 
 SPEC CHECKSUMS:
-  Stormpath: 34bd4ca667740806ef9071dacea831a2882cdcb5
+  Stormpath: df23f5ed9837f84091015287680c41110b1f8f1c
 
 PODFILE CHECKSUM: 507d1a0a91668fa05935e681c4478a23f5e3e5f1
 
