@@ -33,19 +33,19 @@
 }
 
 - (IBAction)loginButtonPressed:(id)sender {
-    [[Stormpath sharedSession] login:self.emailTextField.text password:self.passwordTextField.text completionHandler:^(BOOL success, NSError * _Nullable error) {
+    [[SPHStormpath sharedSession] loginWithUsername:self.emailTextField.text password:self.passwordTextField.text callback:^(BOOL success, NSError * _Nullable error) {
         [self loginCompletionHandler:success error:error];
     }];
 }
 
 - (IBAction)loginWithFacebookButtonPressed:(id)sender {
-    [[Stormpath sharedSession] loginWithSocialProvider:StormpathSocialProviderFacebook completionHandler:^(BOOL success, NSError * _Nullable error) {
+    [[SPHStormpath sharedSession] loginWithProvider:SPHProviderFacebook callback:^(BOOL success, NSError * _Nullable error) {
         [self loginCompletionHandler:success error:error];
     }];
 }
 
 - (IBAction)loginWithGoogleButtonPressed:(id)sender {
-    [[Stormpath sharedSession] loginWithSocialProvider:StormpathSocialProviderGoogle completionHandler:^(BOOL success, NSError * _Nullable error) {
+    [[SPHStormpath sharedSession] loginWithProvider:SPHProviderGoogle callback:^(BOOL success, NSError * _Nullable error) {
         [self loginCompletionHandler:success error:error];
     }];
 }
@@ -61,7 +61,7 @@
 // Helper method that loads the /me endpoint (and optionally displays a
 // failure alert)
 - (void)loadAccountWithFailureAlert:(BOOL)failureAlert {
-    [[Stormpath sharedSession] me:^(Account * _Nullable account, NSError * _Nullable error) {
+    [[SPHStormpath sharedSession] meWithCallback:^(SPHAccount * _Nullable account, NSError * _Nullable error) {
         if(error) {
             if(failureAlert) {
                 [self showAlertWithTitle:@"Error" message:error.localizedDescription];
@@ -73,7 +73,7 @@
 }
 
 // Helper method that takes an account object & shows the profile page
-- (void)showProfileForAccount:(Account *)account {
+- (void)showProfileForAccount:(SPHAccount *)account {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ProfileViewController *profileViewController = [storyboard instantiateViewControllerWithIdentifier:@"profile"];
     profileViewController.account = account;
@@ -81,7 +81,7 @@
 }
 
 - (IBAction)resetButtonPressed:(id)sender {
-    [[Stormpath sharedSession] resetPassword:_emailTextField.text completionHandler:^(BOOL success, NSError * _Nullable error) {
+    [[SPHStormpath sharedSession] resetPasswordWithEmail:_emailTextField.text callback:^(BOOL success, NSError * _Nullable error) {
         if(success) {
             [self showAlertWithTitle:@"Success" message:@"Password Reset Email Sent!"];
         } else {

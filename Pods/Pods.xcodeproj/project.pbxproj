@@ -7,148 +7,173 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06B98FA8619C0EBF3A7DF37D29A877B6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD142CF513FFE9552D948D40570332 /* Logger.swift */; };
-		073F997819CC4ED3267CBFBFF86F3971 /* StormpathSocialProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F9F0A566A3982DA99B1185592CAC77 /* StormpathSocialProvider.swift */; };
-		0DD3AA85619FA67B2C8100BEB3206711 /* StormpathConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E6AF02DA0C5CD97E4DE48C78BBA8F /* StormpathConfiguration.swift */; };
-		1750F61BACE475A1A2135C0EAFC027E0 /* Pods-Stormpath Swift Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A76CB12EEFC0F6385C9F7C803E392180 /* Pods-Stormpath Swift Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2261D421C8B8DDA2C74D342E272F6CEF /* OAuthAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF452321B3EF1AF42EDE60429BD37BA /* OAuthAPIRequestManager.swift */; };
-		2B278761EBEC851FAFB04FD4C5FA1FC1 /* Pods-Stormpath Swift Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F3360187460363016409D889A1DFC /* Pods-Stormpath Swift Example-dummy.m */; };
-		333B4FBCA1023FF23311477CBC4C013D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339E86B5DCB42D09B4F2B9A82AAE6A13 /* APIService.swift */; };
-		454B119ED760E2AA5288A8154AAE2F83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		4791AC27BE520C4B0D3118D5D6B8A1FA /* StormpathSocialProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFA5A2FF50C867FEF4F1ECEAD89E9 /* StormpathSocialProviderConfiguration.swift */; };
-		47DE5969A95F42C0EF0CD0201638859C /* SocialLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E68499B6DB545AB000972AB25E99 /* SocialLoginService.swift */; };
-		53214DDED2E7F476B416528FC904CF3A /* Stormpath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796A6BFA4211192B3BD47088140BFE34 /* Stormpath.swift */; };
-		54BCDB5A7B0296901076D609326DD81A /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10105A40F2B74E4430B3E0D1018B790 /* APIRequestManager.swift */; };
-		613D6D3A5CEE47E86455873E63F6EE63 /* MeAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432F8D3F8D45B7163A0CCFD1E3B94053 /* MeAPIRequestManager.swift */; };
-		71FBD62A9F54CEB016FA8AB64ABE81EC /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED18125AD04150FFEE96E9B1C95E16 /* KeychainService.swift */; };
-		7544D58E4A78993BCAA6D0CC51947FE3 /* Pods-Stormpath ObjC Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E630B8370E289D72E6C077042B894C /* Pods-Stormpath ObjC Example-dummy.m */; };
-		7989E4C7BAA8CD158CE1FEB2B875820F /* Pods-Stormpath ObjC Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9893D5E0E0B8DB368C808702478673DE /* Pods-Stormpath ObjC Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D43E727083A2AA42415685D228FCCC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		84ED1B91370CA6BE803F8AF5DCFE7BE8 /* StormpathError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAAEF0CE11282E755F4F7E43AB4075A /* StormpathError.swift */; };
-		8521B8ACD76DD76F68F7396C3A7793F3 /* Stormpath-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8E3B1CF00135BF9ED19D018188D4 /* Stormpath-dummy.m */; };
-		92D5803FF8634906630B3BF690B8E211 /* Stormpath-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5080713C56199EA9A3F530497BBBDE9 /* Stormpath-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94CF5AF423895EC48C59F6239E808E0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		98ACCED34C22817E40D31145C41C9BD5 /* ResetPasswordAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C2FCC28BBE94BF73268BDDE638D7DC /* ResetPasswordAPIRequestManager.swift */; };
-		B5F6E0600BAAB7EE556BF08831D3EAFA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0952EC2F075BE845149EEECC17C7FBD7 /* Account.swift */; };
-		C6349071EB491F13E251CC0C225504A0 /* GoogleLoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B018B7F604AF684C2D814A82AAE90296 /* GoogleLoginProvider.swift */; };
-		C6C919491ADE2E0B95C31C7F87B8D7D6 /* RegistrationAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77EA81B409450D4C0DDD013B98C3772 /* RegistrationAPIRequestManager.swift */; };
-		E7C71A5F6E87D9A3F7AA66128E6405F6 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9935C0CB81FBC4FB5A229747F6F8AA8D /* LoginProvider.swift */; };
-		F2F81768F7E6CC62555D0E20A6C0EDBE /* SocialLoginAPIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E36EE6450532A0DE3BB9E9EE2710 /* SocialLoginAPIRequestManager.swift */; };
-		FFE37DE885D1B63355860F82EFE5106D /* FacebookLoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4DAEDD05EAD5FE9A163628AD6F659 /* FacebookLoginProvider.swift */; };
+		03B168DE128D59580BD63086FBE3C99A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1610E8B553712DB8194E6DA265A46 /* APIService.swift */; };
+		05B8C19426C233D1B1EEBD11377AF01B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3EEC13C76F1B89E1C71B2ADD7CB908 /* Account.swift */; };
+		0A1F7091C77B22337037957CF1B91FC6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A32E2E5F9E3575A87F232AA4D151F2 /* APIClient.swift */; };
+		105CF2F9935CE4DC5CEE0531E9A93218 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D796504957142FD1587C6353FE1CEF /* SwiftyJSON.swift */; };
+		15291B8092F6C0AB1D73C8E35F9504F3 /* Stormpath-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C065FF178783E95CA69D46331E7251BF /* Stormpath-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18727947E27F2681BAC14776EBA7E9E0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F1601CFC9219F03DEC10753C75F78 /* Logger.swift */; };
+		21524FA926ABD8E99B8A3E8FD702D2D6 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769355DACA2F1319C9506186CAF19C6 /* FormField.swift */; };
+		27B01C0CB9EFAB7637B86AC84D10E3C9 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB307DF91540EB14BF076C192B8D8B /* APIRequest.swift */; };
+		31E5C8BBBFEDDBB60877AB56E731E39F /* StormpathError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9996274FFBE398B9125BFB9EEF57857A /* StormpathError.swift */; };
+		47BB12AE4453C2EB3C76A4F01611FAC0 /* AccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B8015A7C2E399E7B636697951970C /* AccountStore.swift */; };
+		5557110FA490365249F1A95FEF7312FD /* Pods-Stormpath Swift Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A76CB12EEFC0F6385C9F7C803E392180 /* Pods-Stormpath Swift Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F75DF279B02FE2972F7AFB6B18CCF3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		61E45E3E87DEAD60A60991395BB9FE97 /* Stormpath-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B3F61C9C82517F33ED0D69C1B2B58D /* Stormpath-dummy.m */; };
+		7441DDFF3BF4F6D412796443CDD506C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		79E4256A9510A9DF6C3A67598E01E7A6 /* StormpathConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016BD5E2E3503F9A3D4589D9D91988C /* StormpathConfiguration.swift */; };
+		7B70D3944F2863C10ADA353CF46C23C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		89C8229C57E8A13156D9CA1850CE18C4 /* Pods-Stormpath ObjC Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9893D5E0E0B8DB368C808702478673DE /* Pods-Stormpath ObjC Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D8F407A8ADCD619AC0482E6AD67DC73 /* Pods-Stormpath ObjC Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E630B8370E289D72E6C077042B894C /* Pods-Stormpath ObjC Example-dummy.m */; };
+		AB4D59A76B8E782970299FDE3D93F090 /* RegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B770A07C04D588DF6A3F245A65735 /* RegistrationForm.swift */; };
+		AE11AC83EADCEE72A6E7B69297FD4397 /* Pods-Stormpath Swift Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F3360187460363016409D889A1DFC /* Pods-Stormpath Swift Example-dummy.m */; };
+		B50234613398B2248D4D9735356E1E9B /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C982F41618272CC8FDA5485E5496FCD7 /* KeychainService.swift */; };
+		C6D7BA62C31081135F973AC003D1CDFB /* SocialLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4097B3B28444DCA8FDF542C4811C6B4 /* SocialLoginService.swift */; };
+		E51A51DB0F9EC153B2FAE56EC51AF00C /* Stormpath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB28C8511CD5CDC6DA5B952B7C128B /* Stormpath.swift */; };
+		EF905CA0B3ABF8F87739881A74B1938C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44943AD5C7B12DF5A8987AF04B5A29 /* LoginModel.swift */; };
+		FB926A7531EF81084A6BC1A1AC3841B2 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558FDB7150095CA87553FB4B340B6FB8 /* APIResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1BD590A4B1FFE1176F47837CEFAB985C /* PBXContainerItemProxy */ = {
+		6EDC056818FDFD155C3A56410A98D666 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A270DCF642207613BB6A54942070D26;
+			remoteGlobalIDString = 43CD88295784CA58D95AA30DBAC84880;
 			remoteInfo = Stormpath;
 		};
-		C11A8AEA31E242A9E99C091A7CDCF587 /* PBXContainerItemProxy */ = {
+		D56B205F4D6329DACFA419ECECED9246 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A270DCF642207613BB6A54942070D26;
+			remoteGlobalIDString = 43CD88295784CA58D95AA30DBAC84880;
 			remoteInfo = Stormpath;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00ED18125AD04150FFEE96E9B1C95E16 /* KeychainService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainService.swift; path = Stormpath/Keychain/KeychainService.swift; sourceTree = "<group>"; };
-		01F9F0A566A3982DA99B1185592CAC77 /* StormpathSocialProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathSocialProvider.swift; path = Stormpath/StormpathSocialProvider.swift; sourceTree = "<group>"; };
 		077B5E823BA61CFC407BC45F6913B249 /* Pods-Stormpath ObjC Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stormpath ObjC Example.release.xcconfig"; sourceTree = "<group>"; };
-		0952EC2F075BE845149EEECC17C7FBD7 /* Account.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Account.swift; path = Stormpath/Account.swift; sourceTree = "<group>"; };
+		078B770A07C04D588DF6A3F245A65735 /* RegistrationForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegistrationForm.swift; path = Stormpath/Networking/RegistrationForm.swift; sourceTree = "<group>"; };
 		1D9BF6353721B5A781A20B625D8F69A6 /* Pods-Stormpath ObjC Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Stormpath ObjC Example-frameworks.sh"; sourceTree = "<group>"; };
-		2EAAEF0CE11282E755F4F7E43AB4075A /* StormpathError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathError.swift; path = Stormpath/Networking/StormpathError.swift; sourceTree = "<group>"; };
-		339E86B5DCB42D09B4F2B9A82AAE6A13 /* APIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = Stormpath/Networking/APIService.swift; sourceTree = "<group>"; };
-		355F06A676792D5603800FEC0CF30010 /* Pods-Stormpath Swift Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Stormpath Swift Example.modulemap"; sourceTree = "<group>"; };
-		432F8D3F8D45B7163A0CCFD1E3B94053 /* MeAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeAPIRequestManager.swift; path = Stormpath/Networking/MeAPIRequestManager.swift; sourceTree = "<group>"; };
-		43CB8E3B1CF00135BF9ED19D018188D4 /* Stormpath-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stormpath-dummy.m"; sourceTree = "<group>"; };
-		538A9261CA34B682407F76DBD3A987C6 /* Stormpath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stormpath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5777DEA9572FEBB48900245C843CCF87 /* Stormpath.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Stormpath.modulemap; sourceTree = "<group>"; };
-		57DD142CF513FFE9552D948D40570332 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Stormpath/Networking/Logger.swift; sourceTree = "<group>"; };
+		2565E369B8E3CAE90BEB24903838A99C /* Stormpath.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stormpath.xcconfig; sourceTree = "<group>"; };
+		2A3EEC13C76F1B89E1C71B2ADD7CB908 /* Account.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Account.swift; path = Stormpath/Account.swift; sourceTree = "<group>"; };
+		355F06A676792D5603800FEC0CF30010 /* Pods-Stormpath Swift Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Stormpath Swift Example.modulemap"; sourceTree = "<group>"; };
+		39A32E2E5F9E3575A87F232AA4D151F2 /* APIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Stormpath/Networking/APIClient.swift; sourceTree = "<group>"; };
+		4FCB307DF91540EB14BF076C192B8D8B /* APIRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRequest.swift; path = Stormpath/Networking/APIRequest.swift; sourceTree = "<group>"; };
+		5016BD5E2E3503F9A3D4589D9D91988C /* StormpathConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathConfiguration.swift; path = Stormpath/StormpathConfiguration.swift; sourceTree = "<group>"; };
+		538A9261CA34B682407F76DBD3A987C6 /* Stormpath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Stormpath.framework; path = Stormpath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D796504957142FD1587C6353FE1CEF /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Stormpath/Dependencies/SwiftyJSON.swift; sourceTree = "<group>"; };
+		558FDB7150095CA87553FB4B340B6FB8 /* APIResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIResponse.swift; path = Stormpath/Networking/APIResponse.swift; sourceTree = "<group>"; };
 		5A5A9B5BA0A61AA9FB0917C54B89E8A6 /* Pods-Stormpath Swift Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stormpath Swift Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5AADA1C882939A652DEE1EC28BAA283B /* Pods-Stormpath ObjC Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Stormpath ObjC Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		60E630B8370E289D72E6C077042B894C /* Pods-Stormpath ObjC Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Stormpath ObjC Example-dummy.m"; sourceTree = "<group>"; };
+		6769355DACA2F1319C9506186CAF19C6 /* FormField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormField.swift; path = Stormpath/Models/FormField.swift; sourceTree = "<group>"; };
 		68F651865590E46CFA33F834E190BF65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696B9635E93FED3AD13C6277268898FE /* Pods-Stormpath Swift Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Stormpath Swift Example-frameworks.sh"; sourceTree = "<group>"; };
-		796A6BFA4211192B3BD47088140BFE34 /* Stormpath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stormpath.swift; path = Stormpath/Core/Stormpath.swift; sourceTree = "<group>"; };
-		7BA4DAEDD05EAD5FE9A163628AD6F659 /* FacebookLoginProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookLoginProvider.swift; path = "Stormpath/Social Login/FacebookLoginProvider.swift"; sourceTree = "<group>"; };
-		7EDC6F0175F61FA1496D99F510446FF0 /* Pods_Stormpath_ObjC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stormpath_ObjC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		845BE682ED5D5948E676351FF83FE16B /* Pods-Stormpath ObjC Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Stormpath ObjC Example.modulemap"; sourceTree = "<group>"; };
+		6B7F1601CFC9219F03DEC10753C75F78 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Stormpath/Networking/Logger.swift; sourceTree = "<group>"; };
+		7C44943AD5C7B12DF5A8987AF04B5A29 /* LoginModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = Stormpath/Models/LoginModel.swift; sourceTree = "<group>"; };
+		7EDC6F0175F61FA1496D99F510446FF0 /* Pods_Stormpath_ObjC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Stormpath_ObjC_Example.framework; path = "Pods-Stormpath ObjC Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B0BBE4DB10BD2D5BF2C3B221252974 /* Stormpath-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-prefix.pch"; sourceTree = "<group>"; };
+		840B8015A7C2E399E7B636697951970C /* AccountStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccountStore.swift; path = Stormpath/Models/AccountStore.swift; sourceTree = "<group>"; };
+		845BE682ED5D5948E676351FF83FE16B /* Pods-Stormpath ObjC Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Stormpath ObjC Example.modulemap"; sourceTree = "<group>"; };
 		8C513DD7E0E000F046847069EDBCA5CD /* Pods-Stormpath Swift Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stormpath Swift Example.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9893D5E0E0B8DB368C808702478673DE /* Pods-Stormpath ObjC Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Stormpath ObjC Example-umbrella.h"; sourceTree = "<group>"; };
-		9928D036410A5EAB977B52FCC604B719 /* Stormpath-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-prefix.pch"; sourceTree = "<group>"; };
-		9935C0CB81FBC4FB5A229747F6F8AA8D /* LoginProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginProvider.swift; path = "Stormpath/Social Login/LoginProvider.swift"; sourceTree = "<group>"; };
+		9996274FFBE398B9125BFB9EEF57857A /* StormpathError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathError.swift; path = Stormpath/Networking/StormpathError.swift; sourceTree = "<group>"; };
 		9E767FD37E7FD74F3C620862AE21640C /* Pods-Stormpath ObjC Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stormpath ObjC Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A735C3F087308CEFE683D4E22F6C77B1 /* Stormpath.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stormpath.xcconfig; sourceTree = "<group>"; };
 		A76CB12EEFC0F6385C9F7C803E392180 /* Pods-Stormpath Swift Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Stormpath Swift Example-umbrella.h"; sourceTree = "<group>"; };
-		AF60E36EE6450532A0DE3BB9E9EE2710 /* SocialLoginAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialLoginAPIRequestManager.swift; path = Stormpath/Networking/SocialLoginAPIRequestManager.swift; sourceTree = "<group>"; };
-		B018B7F604AF684C2D814A82AAE90296 /* GoogleLoginProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleLoginProvider.swift; path = "Stormpath/Social Login/GoogleLoginProvider.swift"; sourceTree = "<group>"; };
-		B10105A40F2B74E4430B3E0D1018B790 /* APIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRequestManager.swift; path = Stormpath/Networking/APIRequestManager.swift; sourceTree = "<group>"; };
-		B31E6AF02DA0C5CD97E4DE48C78BBA8F /* StormpathConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathConfiguration.swift; path = Stormpath/StormpathConfiguration.swift; sourceTree = "<group>"; };
-		B37B60668160FAA270066C76B344D5F4 /* Pods_Stormpath_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stormpath_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5080713C56199EA9A3F530497BBBDE9 /* Stormpath-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-umbrella.h"; sourceTree = "<group>"; };
+		B37B60668160FAA270066C76B344D5F4 /* Pods_Stormpath_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Stormpath_Swift_Example.framework; path = "Pods-Stormpath Swift Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CFB0AC53962722D940E3EE2CFC8B09 /* Pods-Stormpath Swift Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stormpath Swift Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BD02863C1AF5DF730CA22A91A8A0AE9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD1DFA5A2FF50C867FEF4F1ECEAD89E9 /* StormpathSocialProviderConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathSocialProviderConfiguration.swift; path = Stormpath/StormpathSocialProviderConfiguration.swift; sourceTree = "<group>"; };
-		BDF452321B3EF1AF42EDE60429BD37BA /* OAuthAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthAPIRequestManager.swift; path = Stormpath/Networking/OAuthAPIRequestManager.swift; sourceTree = "<group>"; };
+		C065FF178783E95CA69D46331E7251BF /* Stormpath-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-umbrella.h"; sourceTree = "<group>"; };
 		C4CCC6A637FC6D40E62865BAA55278D6 /* Pods-Stormpath Swift Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Stormpath Swift Example-resources.sh"; sourceTree = "<group>"; };
-		C6C2FCC28BBE94BF73268BDDE638D7DC /* ResetPasswordAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResetPasswordAPIRequestManager.swift; path = Stormpath/Networking/ResetPasswordAPIRequestManager.swift; sourceTree = "<group>"; };
-		C9F2E68499B6DB545AB000972AB25E99 /* SocialLoginService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialLoginService.swift; path = Stormpath/Networking/SocialLoginService.swift; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C982F41618272CC8FDA5485E5496FCD7 /* KeychainService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainService.swift; path = Stormpath/Keychain/KeychainService.swift; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D004438BF8968B3ABB9765F2CF46F522 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4097B3B28444DCA8FDF542C4811C6B4 /* SocialLoginService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialLoginService.swift; path = Stormpath/Networking/SocialLoginService.swift; sourceTree = "<group>"; };
 		DDCD7761BAFF205678133A192C9B6EF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D1610E8B553712DB8194E6DA265A46 /* APIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = Stormpath/Networking/APIService.swift; sourceTree = "<group>"; };
+		E2BB28C8511CD5CDC6DA5B952B7C128B /* Stormpath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stormpath.swift; path = Stormpath/Core/Stormpath.swift; sourceTree = "<group>"; };
+		EFE752913C37C7109B0A3EDB6F779AAB /* Stormpath.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Stormpath.modulemap; sourceTree = "<group>"; };
+		F2B3F61C9C82517F33ED0D69C1B2B58D /* Stormpath-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stormpath-dummy.m"; sourceTree = "<group>"; };
 		F35F3360187460363016409D889A1DFC /* Pods-Stormpath Swift Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Stormpath Swift Example-dummy.m"; sourceTree = "<group>"; };
 		F3C76EBDE10F8BD26801EA4725D708F1 /* Pods-Stormpath Swift Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Stormpath Swift Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F77EA81B409450D4C0DDD013B98C3772 /* RegistrationAPIRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegistrationAPIRequestManager.swift; path = Stormpath/Networking/RegistrationAPIRequestManager.swift; sourceTree = "<group>"; };
 		F83402197693636419CAFEA3DB10B371 /* Pods-Stormpath ObjC Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Stormpath ObjC Example-resources.sh"; sourceTree = "<group>"; };
 		FCD5D766F2FC0C3E91AF8F2A235C550D /* Pods-Stormpath ObjC Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stormpath ObjC Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0153C6A25AFAD810B7D823B5E418E8BF /* Frameworks */ = {
+		49528242E8AFF2BF91A92BF596047FB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454B119ED760E2AA5288A8154AAE2F83 /* Foundation.framework in Frameworks */,
+				5F75DF279B02FE2972F7AFB6B18CCF3D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A85C68CA2C80187629EDE0E5351395A0 /* Frameworks */ = {
+		F217C65C965810CEB7BDD8F928383D99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D43E727083A2AA42415685D228FCCC6 /* Foundation.framework in Frameworks */,
+				7441DDFF3BF4F6D412796443CDD506C3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4C93874F9AB8AFDEEBECE8E6E9A37C2 /* Frameworks */ = {
+		F2E0CFB3D1134928A32D8F635E3B658D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CF5AF423895EC48C59F6239E808E0B /* Foundation.framework in Frameworks */,
+				7B70D3944F2863C10ADA353CF46C23C6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		271FD45FF6B86840CDCEC7393B4E33D5 /* Pods */ = {
+		1D39AC7853B101D02CA574E5F11E5137 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9CEA30040F68E3026278AED11CC776F8 /* Stormpath */,
+				D004438BF8968B3ABB9765F2CF46F522 /* Info.plist */,
+				EFE752913C37C7109B0A3EDB6F779AAB /* Stormpath.modulemap */,
+				2565E369B8E3CAE90BEB24903838A99C /* Stormpath.xcconfig */,
+				F2B3F61C9C82517F33ED0D69C1B2B58D /* Stormpath-dummy.m */,
+				81B0BBE4DB10BD2D5BF2C3B221252974 /* Stormpath-prefix.pch */,
+				C065FF178783E95CA69D46331E7251BF /* Stormpath-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Stormpath";
+			sourceTree = "<group>";
+		};
+		2F1008CF91979F40CD65301AA709D97B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				435C29AC8C1DB3468ACC1D46FE9A3D70 /* Stormpath */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		435C29AC8C1DB3468ACC1D46FE9A3D70 /* Stormpath */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				2A3EEC13C76F1B89E1C71B2ADD7CB908 /* Account.swift */,
+				840B8015A7C2E399E7B636697951970C /* AccountStore.swift */,
+				39A32E2E5F9E3575A87F232AA4D151F2 /* APIClient.swift */,
+				4FCB307DF91540EB14BF076C192B8D8B /* APIRequest.swift */,
+				558FDB7150095CA87553FB4B340B6FB8 /* APIResponse.swift */,
+				E1D1610E8B553712DB8194E6DA265A46 /* APIService.swift */,
+				6769355DACA2F1319C9506186CAF19C6 /* FormField.swift */,
+				C982F41618272CC8FDA5485E5496FCD7 /* KeychainService.swift */,
+				6B7F1601CFC9219F03DEC10753C75F78 /* Logger.swift */,
+				7C44943AD5C7B12DF5A8987AF04B5A29 /* LoginModel.swift */,
+				078B770A07C04D588DF6A3F245A65735 /* RegistrationForm.swift */,
+				D4097B3B28444DCA8FDF542C4811C6B4 /* SocialLoginService.swift */,
+				E2BB28C8511CD5CDC6DA5B952B7C128B /* Stormpath.swift */,
+				5016BD5E2E3503F9A3D4589D9D91988C /* StormpathConfiguration.swift */,
+				9996274FFBE398B9125BFB9EEF57857A /* StormpathError.swift */,
+				53D796504957142FD1587C6353FE1CEF /* SwiftyJSON.swift */,
+				1D39AC7853B101D02CA574E5F11E5137 /* Support Files */,
 			);
-			name = iOS;
+			name = Stormpath;
+			path = Stormpath;
 			sourceTree = "<group>";
 		};
 		52248843C2E24D8EA41DDB1360686CB6 /* Pods-Stormpath ObjC Example */ = {
@@ -169,12 +194,20 @@
 			path = "Target Support Files/Pods-Stormpath ObjC Example";
 			sourceTree = "<group>";
 		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				271FD45FF6B86840CDCEC7393B4E33D5 /* Pods */,
+				2F1008CF91979F40CD65301AA709D97B /* Pods */,
 				CCEB61E5D37BCFD164E9A7E14A9E1436 /* Products */,
 				D43F7E445B58CA66D41BCEF5AF2A3B35 /* Targets Support Files */,
 			);
@@ -198,37 +231,10 @@
 			path = "Target Support Files/Pods-Stormpath Swift Example";
 			sourceTree = "<group>";
 		};
-		9CEA30040F68E3026278AED11CC776F8 /* Stormpath */ = {
-			isa = PBXGroup;
-			children = (
-				0952EC2F075BE845149EEECC17C7FBD7 /* Account.swift */,
-				B10105A40F2B74E4430B3E0D1018B790 /* APIRequestManager.swift */,
-				339E86B5DCB42D09B4F2B9A82AAE6A13 /* APIService.swift */,
-				7BA4DAEDD05EAD5FE9A163628AD6F659 /* FacebookLoginProvider.swift */,
-				B018B7F604AF684C2D814A82AAE90296 /* GoogleLoginProvider.swift */,
-				00ED18125AD04150FFEE96E9B1C95E16 /* KeychainService.swift */,
-				57DD142CF513FFE9552D948D40570332 /* Logger.swift */,
-				9935C0CB81FBC4FB5A229747F6F8AA8D /* LoginProvider.swift */,
-				432F8D3F8D45B7163A0CCFD1E3B94053 /* MeAPIRequestManager.swift */,
-				BDF452321B3EF1AF42EDE60429BD37BA /* OAuthAPIRequestManager.swift */,
-				F77EA81B409450D4C0DDD013B98C3772 /* RegistrationAPIRequestManager.swift */,
-				C6C2FCC28BBE94BF73268BDDE638D7DC /* ResetPasswordAPIRequestManager.swift */,
-				AF60E36EE6450532A0DE3BB9E9EE2710 /* SocialLoginAPIRequestManager.swift */,
-				C9F2E68499B6DB545AB000972AB25E99 /* SocialLoginService.swift */,
-				796A6BFA4211192B3BD47088140BFE34 /* Stormpath.swift */,
-				B31E6AF02DA0C5CD97E4DE48C78BBA8F /* StormpathConfiguration.swift */,
-				2EAAEF0CE11282E755F4F7E43AB4075A /* StormpathError.swift */,
-				01F9F0A566A3982DA99B1185592CAC77 /* StormpathSocialProvider.swift */,
-				BD1DFA5A2FF50C867FEF4F1ECEAD89E9 /* StormpathSocialProviderConfiguration.swift */,
-				F1C0CF0DCB0F568EC6B50436AB4D9484 /* Support Files */,
-			);
-			path = Stormpath;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,75 +258,43 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F1C0CF0DCB0F568EC6B50436AB4D9484 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BD02863C1AF5DF730CA22A91A8A0AE9D /* Info.plist */,
-				5777DEA9572FEBB48900245C843CCF87 /* Stormpath.modulemap */,
-				A735C3F087308CEFE683D4E22F6C77B1 /* Stormpath.xcconfig */,
-				43CB8E3B1CF00135BF9ED19D018188D4 /* Stormpath-dummy.m */,
-				9928D036410A5EAB977B52FCC604B719 /* Stormpath-prefix.pch */,
-				B5080713C56199EA9A3F530497BBBDE9 /* Stormpath-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Stormpath";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		445AB2A7F1F1FB2F5B732DEB30327D9E /* Headers */ = {
+		AA629AD6E97B1048190967EFF508A0F9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7989E4C7BAA8CD158CE1FEB2B875820F /* Pods-Stormpath ObjC Example-umbrella.h in Headers */,
+				89C8229C57E8A13156D9CA1850CE18C4 /* Pods-Stormpath ObjC Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D592488F4E553682792F88D18A51B8E2 /* Headers */ = {
+		ABC30155723F10CBA46E17A6C4E9958D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1750F61BACE475A1A2135C0EAFC027E0 /* Pods-Stormpath Swift Example-umbrella.h in Headers */,
+				15291B8092F6C0AB1D73C8E35F9504F3 /* Stormpath-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA9CA23D43738017A6675728D0D1C62E /* Headers */ = {
+		CF66D879F836BEC311A8EC34F72B9AD8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D5803FF8634906630B3BF690B8E211 /* Stormpath-umbrella.h in Headers */,
+				5557110FA490365249F1A95FEF7312FD /* Pods-Stormpath Swift Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		05E62ABAB2E1E1A9C70F374E85BB31CB /* Pods-Stormpath ObjC Example */ = {
+		43CD88295784CA58D95AA30DBAC84880 /* Stormpath */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F871FA6A6C32794D4C4D8EB9C830C8B7 /* Build configuration list for PBXNativeTarget "Pods-Stormpath ObjC Example" */;
+			buildConfigurationList = C9A515CD1193792586D29F82D8178D73 /* Build configuration list for PBXNativeTarget "Stormpath" */;
 			buildPhases = (
-				01767C75A4DEF4D819E18E6800A1508C /* Sources */,
-				A85C68CA2C80187629EDE0E5351395A0 /* Frameworks */,
-				445AB2A7F1F1FB2F5B732DEB30327D9E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				72A997124A37602A4EBCF3C6BBACF854 /* PBXTargetDependency */,
-			);
-			name = "Pods-Stormpath ObjC Example";
-			productName = "Pods-Stormpath ObjC Example";
-			productReference = 7EDC6F0175F61FA1496D99F510446FF0 /* Pods_Stormpath_ObjC_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4A270DCF642207613BB6A54942070D26 /* Stormpath */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FEC045A80BD124CC6D99FD31D902AB1D /* Build configuration list for PBXNativeTarget "Stormpath" */;
-			buildPhases = (
-				9EBC34F1C4A570137E268EB77669CF96 /* Sources */,
-				E4C93874F9AB8AFDEEBECE8E6E9A37C2 /* Frameworks */,
-				DA9CA23D43738017A6675728D0D1C62E /* Headers */,
+				AE156B7822D42050A25FA8084C8613A4 /* Sources */,
+				F2E0CFB3D1134928A32D8F635E3B658D /* Frameworks */,
+				ABC30155723F10CBA46E17A6C4E9958D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -331,22 +305,40 @@
 			productReference = 538A9261CA34B682407F76DBD3A987C6 /* Stormpath.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		77E9BBED1FB8CB6F3170881B64A1E60B /* Pods-Stormpath Swift Example */ = {
+		7F398C65F923EF802E7303C2C076703E /* Pods-Stormpath Swift Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 217AFC0E57BE3CE66E828C73CB63E174 /* Build configuration list for PBXNativeTarget "Pods-Stormpath Swift Example" */;
+			buildConfigurationList = F56BA58171FFD7D6E0117F107E4EAA51 /* Build configuration list for PBXNativeTarget "Pods-Stormpath Swift Example" */;
 			buildPhases = (
-				F6638BD44F18B5D7AD187AD2D471EDBB /* Sources */,
-				0153C6A25AFAD810B7D823B5E418E8BF /* Frameworks */,
-				D592488F4E553682792F88D18A51B8E2 /* Headers */,
+				B24C7EF13D78B63129BD296CE2CA3C36 /* Sources */,
+				49528242E8AFF2BF91A92BF596047FB4 /* Frameworks */,
+				CF66D879F836BEC311A8EC34F72B9AD8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EA328759E3DBE748274FDE7B68DFB40E /* PBXTargetDependency */,
+				7AECFB5A289F033F08A87F7F4C642041 /* PBXTargetDependency */,
 			);
 			name = "Pods-Stormpath Swift Example";
 			productName = "Pods-Stormpath Swift Example";
 			productReference = B37B60668160FAA270066C76B344D5F4 /* Pods_Stormpath_Swift_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDFBBE3639D8572CE61902EDD9DE4414 /* Pods-Stormpath ObjC Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA84EBCFECDCD8FDEB028368B14D5ED /* Build configuration list for PBXNativeTarget "Pods-Stormpath ObjC Example" */;
+			buildPhases = (
+				D9684FC9F3F2D21C77B0C31F10766907 /* Sources */,
+				F217C65C965810CEB7BDD8F928383D99 /* Frameworks */,
+				AA629AD6E97B1048190967EFF508A0F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F87D0C56456F43196BCC7F136017D8B /* PBXTargetDependency */,
+			);
+			name = "Pods-Stormpath ObjC Example";
+			productName = "Pods-Stormpath ObjC Example";
+			productReference = 7EDC6F0175F61FA1496D99F510446FF0 /* Pods_Stormpath_ObjC_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -370,71 +362,68 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05E62ABAB2E1E1A9C70F374E85BB31CB /* Pods-Stormpath ObjC Example */,
-				77E9BBED1FB8CB6F3170881B64A1E60B /* Pods-Stormpath Swift Example */,
-				4A270DCF642207613BB6A54942070D26 /* Stormpath */,
+				CDFBBE3639D8572CE61902EDD9DE4414 /* Pods-Stormpath ObjC Example */,
+				7F398C65F923EF802E7303C2C076703E /* Pods-Stormpath Swift Example */,
+				43CD88295784CA58D95AA30DBAC84880 /* Stormpath */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01767C75A4DEF4D819E18E6800A1508C /* Sources */ = {
+		AE156B7822D42050A25FA8084C8613A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7544D58E4A78993BCAA6D0CC51947FE3 /* Pods-Stormpath ObjC Example-dummy.m in Sources */,
+				05B8C19426C233D1B1EEBD11377AF01B /* Account.swift in Sources */,
+				47BB12AE4453C2EB3C76A4F01611FAC0 /* AccountStore.swift in Sources */,
+				0A1F7091C77B22337037957CF1B91FC6 /* APIClient.swift in Sources */,
+				27B01C0CB9EFAB7637B86AC84D10E3C9 /* APIRequest.swift in Sources */,
+				FB926A7531EF81084A6BC1A1AC3841B2 /* APIResponse.swift in Sources */,
+				03B168DE128D59580BD63086FBE3C99A /* APIService.swift in Sources */,
+				21524FA926ABD8E99B8A3E8FD702D2D6 /* FormField.swift in Sources */,
+				B50234613398B2248D4D9735356E1E9B /* KeychainService.swift in Sources */,
+				18727947E27F2681BAC14776EBA7E9E0 /* Logger.swift in Sources */,
+				EF905CA0B3ABF8F87739881A74B1938C /* LoginModel.swift in Sources */,
+				AB4D59A76B8E782970299FDE3D93F090 /* RegistrationForm.swift in Sources */,
+				C6D7BA62C31081135F973AC003D1CDFB /* SocialLoginService.swift in Sources */,
+				61E45E3E87DEAD60A60991395BB9FE97 /* Stormpath-dummy.m in Sources */,
+				E51A51DB0F9EC153B2FAE56EC51AF00C /* Stormpath.swift in Sources */,
+				79E4256A9510A9DF6C3A67598E01E7A6 /* StormpathConfiguration.swift in Sources */,
+				31E5C8BBBFEDDBB60877AB56E731E39F /* StormpathError.swift in Sources */,
+				105CF2F9935CE4DC5CEE0531E9A93218 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EBC34F1C4A570137E268EB77669CF96 /* Sources */ = {
+		B24C7EF13D78B63129BD296CE2CA3C36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F6E0600BAAB7EE556BF08831D3EAFA /* Account.swift in Sources */,
-				54BCDB5A7B0296901076D609326DD81A /* APIRequestManager.swift in Sources */,
-				333B4FBCA1023FF23311477CBC4C013D /* APIService.swift in Sources */,
-				FFE37DE885D1B63355860F82EFE5106D /* FacebookLoginProvider.swift in Sources */,
-				C6349071EB491F13E251CC0C225504A0 /* GoogleLoginProvider.swift in Sources */,
-				71FBD62A9F54CEB016FA8AB64ABE81EC /* KeychainService.swift in Sources */,
-				06B98FA8619C0EBF3A7DF37D29A877B6 /* Logger.swift in Sources */,
-				E7C71A5F6E87D9A3F7AA66128E6405F6 /* LoginProvider.swift in Sources */,
-				613D6D3A5CEE47E86455873E63F6EE63 /* MeAPIRequestManager.swift in Sources */,
-				2261D421C8B8DDA2C74D342E272F6CEF /* OAuthAPIRequestManager.swift in Sources */,
-				C6C919491ADE2E0B95C31C7F87B8D7D6 /* RegistrationAPIRequestManager.swift in Sources */,
-				98ACCED34C22817E40D31145C41C9BD5 /* ResetPasswordAPIRequestManager.swift in Sources */,
-				F2F81768F7E6CC62555D0E20A6C0EDBE /* SocialLoginAPIRequestManager.swift in Sources */,
-				47DE5969A95F42C0EF0CD0201638859C /* SocialLoginService.swift in Sources */,
-				8521B8ACD76DD76F68F7396C3A7793F3 /* Stormpath-dummy.m in Sources */,
-				53214DDED2E7F476B416528FC904CF3A /* Stormpath.swift in Sources */,
-				0DD3AA85619FA67B2C8100BEB3206711 /* StormpathConfiguration.swift in Sources */,
-				84ED1B91370CA6BE803F8AF5DCFE7BE8 /* StormpathError.swift in Sources */,
-				073F997819CC4ED3267CBFBFF86F3971 /* StormpathSocialProvider.swift in Sources */,
-				4791AC27BE520C4B0D3118D5D6B8A1FA /* StormpathSocialProviderConfiguration.swift in Sources */,
+				AE11AC83EADCEE72A6E7B69297FD4397 /* Pods-Stormpath Swift Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6638BD44F18B5D7AD187AD2D471EDBB /* Sources */ = {
+		D9684FC9F3F2D21C77B0C31F10766907 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B278761EBEC851FAFB04FD4C5FA1FC1 /* Pods-Stormpath Swift Example-dummy.m in Sources */,
+				8D8F407A8ADCD619AC0482E6AD67DC73 /* Pods-Stormpath ObjC Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		72A997124A37602A4EBCF3C6BBACF854 /* PBXTargetDependency */ = {
+		7AECFB5A289F033F08A87F7F4C642041 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Stormpath;
-			target = 4A270DCF642207613BB6A54942070D26 /* Stormpath */;
-			targetProxy = 1BD590A4B1FFE1176F47837CEFAB985C /* PBXContainerItemProxy */;
+			target = 43CD88295784CA58D95AA30DBAC84880 /* Stormpath */;
+			targetProxy = 6EDC056818FDFD155C3A56410A98D666 /* PBXContainerItemProxy */;
 		};
-		EA328759E3DBE748274FDE7B68DFB40E /* PBXTargetDependency */ = {
+		8F87D0C56456F43196BCC7F136017D8B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Stormpath;
-			target = 4A270DCF642207613BB6A54942070D26 /* Stormpath */;
-			targetProxy = C11A8AEA31E242A9E99C091A7CDCF587 /* PBXContainerItemProxy */;
+			target = 43CD88295784CA58D95AA30DBAC84880 /* Stormpath */;
+			targetProxy = D56B205F4D6329DACFA419ECECED9246 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -483,7 +472,40 @@
 			};
 			name = Debug;
 		};
-		1172D915B49A7F835BDCAE3DE4CAC88C /* Debug */ = {
+		0E2409AA7288FE39A5A192337E5D0352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2565E369B8E3CAE90BEB24903838A99C /* Stormpath.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Stormpath/Stormpath-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Stormpath/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Stormpath/Stormpath.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Stormpath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BADA18E73BE7FB942540A3EF5574F3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5CFB0AC53962722D940E3EE2CFC8B09 /* Pods-Stormpath Swift Example.debug.xcconfig */;
 			buildSettings = {
@@ -513,71 +535,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1CED77D51F7AD2064B38A258F6D4F663 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A735C3F087308CEFE683D4E22F6C77B1 /* Stormpath.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Stormpath/Stormpath-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Stormpath/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Stormpath/Stormpath.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Stormpath;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4389028DF9357A056651DC66C2820C97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A735C3F087308CEFE683D4E22F6C77B1 /* Stormpath.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Stormpath/Stormpath-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Stormpath/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Stormpath/Stormpath.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Stormpath;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -624,7 +581,39 @@
 			};
 			name = Release;
 		};
-		625690AE8B83B4C7F419B7921B0C541A /* Release */ = {
+		59E928CBB9AA0C8EF8F3442178EEB97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2565E369B8E3CAE90BEB24903838A99C /* Stormpath.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Stormpath/Stormpath-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Stormpath/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Stormpath/Stormpath.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Stormpath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93E77D40630C1999B36154B49531861B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C513DD7E0E000F046847069EDBCA5CD /* Pods-Stormpath Swift Example.release.xcconfig */;
 			buildSettings = {
@@ -659,7 +648,42 @@
 			};
 			name = Release;
 		};
-		65F31219001B45A6B7C59A105566F511 /* Debug */ = {
+		C8287FC4A576B2DB78C58F12B712C5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077B5E823BA61CFC407BC45F6913B249 /* Pods-Stormpath ObjC Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Stormpath ObjC Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stormpath ObjC Example/Pods-Stormpath ObjC Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Stormpath_ObjC_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFEA775216EBB47C88FE939360B25D6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCD5D766F2FC0C3E91AF8F2A235C550D /* Pods-Stormpath ObjC Example.debug.xcconfig */;
 			buildSettings = {
@@ -695,49 +719,14 @@
 			};
 			name = Debug;
 		};
-		847371CD6E6454F1D8B5EC2FFBB35BD0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 077B5E823BA61CFC407BC45F6913B249 /* Pods-Stormpath ObjC Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Stormpath ObjC Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Stormpath ObjC Example/Pods-Stormpath ObjC Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Stormpath_ObjC_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		217AFC0E57BE3CE66E828C73CB63E174 /* Build configuration list for PBXNativeTarget "Pods-Stormpath Swift Example" */ = {
+		0AA84EBCFECDCD8FDEB028368B14D5ED /* Build configuration list for PBXNativeTarget "Pods-Stormpath ObjC Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1172D915B49A7F835BDCAE3DE4CAC88C /* Debug */,
-				625690AE8B83B4C7F419B7921B0C541A /* Release */,
+				CFEA775216EBB47C88FE939360B25D6E /* Debug */,
+				C8287FC4A576B2DB78C58F12B712C5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -751,20 +740,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F871FA6A6C32794D4C4D8EB9C830C8B7 /* Build configuration list for PBXNativeTarget "Pods-Stormpath ObjC Example" */ = {
+		C9A515CD1193792586D29F82D8178D73 /* Build configuration list for PBXNativeTarget "Stormpath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65F31219001B45A6B7C59A105566F511 /* Debug */,
-				847371CD6E6454F1D8B5EC2FFBB35BD0 /* Release */,
+				0E2409AA7288FE39A5A192337E5D0352 /* Debug */,
+				59E928CBB9AA0C8EF8F3442178EEB97B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FEC045A80BD124CC6D99FD31D902AB1D /* Build configuration list for PBXNativeTarget "Stormpath" */ = {
+		F56BA58171FFD7D6E0117F107E4EAA51 /* Build configuration list for PBXNativeTarget "Pods-Stormpath Swift Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4389028DF9357A056651DC66C2820C97 /* Debug */,
-				1CED77D51F7AD2064B38A258F6D4F663 /* Release */,
+				3BADA18E73BE7FB942540A3EF5574F3B /* Debug */,
+				93E77D40630C1999B36154B49531861B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

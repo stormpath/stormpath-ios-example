@@ -10,7 +10,8 @@ import Foundation
 
 /**
  Account represents an account object from the Stormpath database.
-*/
+ */
+@objc(SPHAccount)
 public class Account: NSObject {
     /// Stormpath resource URL for the account
     internal(set) public var href: URL!
@@ -38,7 +39,7 @@ public class Account: NSObject {
     
     /// Full name of the user.
     public var fullName: String {
-        return (middleName == nil || middleName == "") ? "\(givenName) \(surname)" : "\(givenName) \(middleName!) \(surname)"
+        return "\(givenName ?? "") \((middleName ?? "") + " ")\(surname ?? "")"
     }
     
     /// Date the account was created in the Stormpath database.
@@ -101,7 +102,8 @@ public class Account: NSObject {
 }
 
 /// Stormpath Account Status
-@objc public enum AccountStatus: Int {
+@objc(SPHAccountStatus)
+public enum AccountStatus: Int {
     //It's an int for Obj-C compatibility
     
     /// Enabled means that we can login to this account

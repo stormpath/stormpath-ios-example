@@ -7,7 +7,6 @@
 //
 
 #import "ProfileViewController.h"
-#import "Stormpath-Swift.h"
 
 @interface ProfileViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *helloLabel;
@@ -38,8 +37,8 @@
     _createdAtLabel.text = [@"Created At: " stringByAppendingString:self.account.createdAt.description];
     _modifiedAtLabel.text = [@"Updated At: " stringByAppendingString:self.account.modifiedAt.description];
     _hrefTextField.text = self.account.href.description;
-    _accessTokenTextField.text = Stormpath.sharedSession.accessToken;
-    _refreshTokenTextField.text = Stormpath.sharedSession.refreshToken;
+    _accessTokenTextField.text = SPHStormpath.sharedSession.accessToken;
+    _refreshTokenTextField.text = SPHStormpath.sharedSession.refreshToken;
     
     
     if(self.account.customData) {
@@ -55,13 +54,13 @@
 }
 
 - (IBAction)refreshAccessTokenButtonPressed:(id)sender {
-    [[Stormpath sharedSession] refreshAccessToken:^(BOOL success, NSError * _Nullable error) {
+    [[SPHStormpath sharedSession] refreshAccessTokenWithCallback:^(BOOL success, NSError * _Nullable error) {
         [self viewWillAppear:false];
     }];
 }
 
 - (IBAction)logoutButtonPressed:(id)sender {
-    [[Stormpath sharedSession] logout];
+    [[SPHStormpath sharedSession] logout];
     [self dismissViewControllerAnimated:NO completion:nil];
 }
 

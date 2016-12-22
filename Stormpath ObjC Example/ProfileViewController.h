@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Stormpath-Swift.h"
 
 @class Account;
 
 @interface ProfileViewController : UIViewController
 
-@property Account *account;
+@property SPHAccount *account;
 
 @end

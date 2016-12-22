@@ -19,62 +19,82 @@ final class APIService: NSObject {
     
     // MARK: Registration
     
-    func register(newAccount account: RegistrationModel, completionHandler: StormpathAccountCallback?) {
-        let registerURL = stormpath.configuration.APIURL.appendingPathComponent(stormpath.configuration.registerEndpoint)
+    func register(newAccount account: RegistrationForm, callback: StormpathAccountCallback?) {
+        let registerURL = stormpath.configuration.APIURL.appendingPathComponent(Endpoints.register.rawValue)
         
-        let requestManager = RegistrationAPIRequestManager(withURL: registerURL, newAccount: account) { (account, error) -> Void in
-            completionHandler?(account, error)
+        var apiRequest = APIRequest(method: .post, url: registerURL)
+        apiRequest.body = account.asDictionary
+        
+        apiRequest.send { (response, error) in
+            if let data = response?.body,
+                let account = Account(fromJSON: data) {
+                callback?(account, nil)
+            } else {
+                callback?(nil, error ?? StormpathError.APIResponseError)
+            }
         }
-        requestManager.begin()
-        
     }
     
     // MARK: Login
     
-    func login(_ username: String, password: String, completionHandler: StormpathSuccessCallback?) {
-        let oauthURL = stormpath.configuration.APIURL.appendingPathComponent(stormpath.configuration.oauthEndpoint)
-        let requestManager = OAuthAPIRequestManager(withURL: oauthURL, username: username, password: password) { (accessToken, refreshToken, error) -> Void in
-            self.loginCompletionHandler(accessToken, refreshToken: refreshToken, error: error, completionHandler: completionHandler)
-        }
-        requestManager.begin()
+    func login(username: String, password: String, callback: StormpathSuccessCallback?) {
+        let oauthURL = stormpath.configuration.APIURL.appendingPathComponent(Endpoints.oauthToken.rawValue)
         
-    }
-    
-    func login(socialProvider provider: StormpathSocialProvider, accessToken: String, completionHandler: StormpathSuccessCallback?) {
-        let socialLoginURL = stormpath.configuration.APIURL.appendingPathComponent(stormpath.configuration.loginEndpoint)
-        let requestManager = SocialLoginAPIRequestManager(withURL: socialLoginURL, accessToken: accessToken, socialProvider: provider) { (accessToken, refreshToken, error) -> Void in
-            self.loginCompletionHandler(accessToken, refreshToken: refreshToken, error: error, completionHandler: completionHandler)
-        }
-        requestManager.begin()
-    }
-    
-    func login(socialProvider provider: StormpathSocialProvider, authorizationCode: String, completionHandler: StormpathSuccessCallback?) {
-        let socialLoginURL = stormpath.configuration.APIURL.appendingPathComponent(stormpath.configuration.loginEndpoint)
-        let requestManager = SocialLoginAPIRequestManager(withURL: socialLoginURL, authorizationCode: authorizationCode, socialProvider: provider) { (accessToken, refreshToken, error) -> Void in
-            self.loginCompletionHandler(accessToken, refreshToken: refreshToken, error: error, completionHandler: completionHandler)
-        }
-        requestManager.begin()
-    }
-    
-    func loginCompletionHandler(_ accessToken: String?, refreshToken: String?, error: NSError?, completionHandler: StormpathSuccessCallback?) {
-        guard let accessToken = accessToken, error == nil else {
-            completionHandler?(false, error)
-            return
-        }
-        stormpath.accessToken = accessToken
+        var apiRequest = APIRequest(method: .post, url: oauthURL)
+        apiRequest.contentType = .urlEncoded
+        apiRequest.body = [ "grant_type": "password",
+                            "username": username,
+                            "password": password]
         
-        if refreshToken != nil {
-            stormpath.refreshToken = refreshToken
-        } else {
-            stormpath.refreshToken = nil
+        login(request: apiRequest, callback: callback)
+    }
+    
+    func login(socialProvider provider: Provider, accessToken: String, callback: StormpathSuccessCallback?) {
+        let socialLoginURL = stormpath.configuration.APIURL.appendingPathComponent(Endpoints.oauthToken.rawValue)
+        
+        var apiRequest = APIRequest(method: .post, url: socialLoginURL)
+        apiRequest.contentType = .urlEncoded
+        apiRequest.body = [ "grant_type": "stormpath_social",
+                            "providerId": provider.asString,
+                            "accessToken": accessToken]
+        
+        login(request: apiRequest, callback: callback)
+    }
+    
+    func login(socialProvider provider: Provider, authorizationCode: String, callback: StormpathSuccessCallback?) {
+        let socialLoginURL = stormpath.configuration.APIURL.appendingPathComponent(Endpoints.oauthToken.rawValue)
+        
+        var apiRequest = APIRequest(method: .post, url: socialLoginURL)
+        apiRequest.contentType = .urlEncoded
+        apiRequest.body = [ "grant_type": "stormpath_social",
+                            "providerId": provider.asString,
+                            "code": authorizationCode]
+        
+        login(request: apiRequest, callback: callback)
+    }
+    
+    func login(request: APIRequest, callback: StormpathSuccessCallback?) {
+        request.send { (response, error) in
+            let accessToken = response?.json["access_token"].string
+            let refreshToken = response?.json["refresh_token"].string
+            
+            if let accessToken = accessToken, error == nil {
+                self.stormpath.accessToken = accessToken
+                self.stormpath.refreshToken = refreshToken
+                
+                callback?(true, nil)
+            }
+            else {
+                callback?(false, error)
+                return
+            }
         }
-        completionHandler?(true, nil)
     }
     
     // MARK: Access token refresh
     
-    func refreshAccessToken(_ completionHandler: StormpathSuccessCallback?) {
-        let oauthURL = stormpath.configuration.APIURL.appendingPathComponent(stormpath.configuration.oauthEndpoint)
+    func refreshAccessToken(_ callback: StormpathSuccessCallback?) {
+        let oauthURL = stormpath.configuration.APIURL.appendingPathComponent(Endpoints.oauthToken.rawValue)
         
         guard let refreshToken = stormpath.refreshToken else {
             let error = NSError(domain: oauthURL.absoluteString, code: 400, userInfo: [NSLocalizedDescriptionKey: "Refresh token not found. Have you logged in yet?"])
@@ -82,85 +102,96 @@ final class APIService: NSObject {
             Logger.logError(error)
             
             DispatchQueue.main.async(execute: { () -> Void in
-                completionHandler?(false, error)
+                callback?(false, error)
             })
             return
         }
         
-        let requestManager = OAuthAPIRequestManager(withURL: oauthURL, refreshToken: refreshToken) { (accessToken, refreshToken, error) -> Void in
-            guard let accessToken = accessToken, error == nil else {
-                completionHandler?(false, error)
-                return
-            }
-            self.stormpath.accessToken = accessToken
-            self.stormpath.refreshToken = refreshToken
-            completionHandler?(true, nil)
-        }
-        requestManager.begin()
+        var apiRequest = APIRequest(method: .post, url: oauthURL)
+        apiRequest.contentType = .urlEncoded
+        apiRequest.body = ["grant_type": "refresh_token",
+                           "refresh_token": refreshToken]
         
+        login(request: apiRequest, callback: callback)
     }
     
     // MARK: Account data
     
-    func me(_ completionHandler: StormpathAccountCallback?) {
-        let meURL = stormpath.configuration.APIURL.appendingPathComponent(stormpath.configuration.meEndpoint)
+    func me(_ callback: StormpathAccountCallback?) {
+        let meURL = stormpath.configuration.APIURL.appendingPathComponent(Endpoints.me.rawValue)
         
-        guard let accessToken = stormpath.accessToken else {
+        guard stormpath.accessToken != nil else {
             let error = NSError(domain: meURL.absoluteString, code: 401, userInfo: [NSLocalizedDescriptionKey: "Refresh token not found. Have you logged in yet?"])
             
             Logger.logError(error)
             
             DispatchQueue.main.async(execute: { () -> Void in
-                completionHandler?(nil, error)
+                callback?(nil, error)
             })
             return
         }
-        let requestManager = MeAPIRequestManager(withURL: meURL, accessToken: accessToken) { (account, error) -> Void in
-            if error?.code == 401 {
-                //Refresh access token & retry
-                self.stormpath.refreshAccessToken({ (success, error) -> Void in
-                    guard error == nil else {
-                        completionHandler?(nil, error)
-                        return
-                    }
-                    let retryRequestManager = MeAPIRequestManager(withURL: meURL, accessToken: accessToken, callback: { (account, error) -> Void in
-                        completionHandler?(account, error)
-                    })
-                    retryRequestManager.begin()
-                })
+        
+        let request = APIRequest(method: .get, url: meURL)
+        stormpath.apiClient.execute(request: request) { (response, error) in
+            if let data = response?.body,
+               let account = Account(fromJSON: data) {
+                callback?(account, nil)
             } else {
-                completionHandler?(account, error)
+                callback?(nil, error ?? StormpathError.APIResponseError)
             }
         }
-        requestManager.begin()
     }
     
     // MARK: Logout
     
     func logout() {
+        let logoutURL = stormpath.configuration.APIURL.appendingPathComponent(Endpoints.oauthRevoke.rawValue)
         
-        let logoutURL = stormpath.configuration.APIURL.appendingPathComponent(stormpath.configuration.logoutEndpoint)
-        var request = URLRequest(url: logoutURL)
-        request.setValue("application/json", forHTTPHeaderField: "Accept")
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpMethod = "GET"
-        
-        Logger.logRequest(request)
+        var request = APIRequest(method: .post, url: logoutURL)
+        request.contentType = .urlEncoded
+        request.body = ["token": stormpath.refreshToken as Any]
+        request.send()
         
         // Regardless of how the API calls goes, we can logout the user locally
         stormpath.accessToken = nil
         stormpath.refreshToken = nil
-        
-        // The API response is not defined, so we won't call the API for now.
     }
     
     // MARK: Forgot password
     
-    func resetPassword(_ email: String, completionHandler: StormpathSuccessCallback?) {
-        let resetPasswordURL = stormpath.configuration.APIURL.appendingPathComponent(stormpath.configuration.forgotPasswordEndpoint)
-        let requestManager = ResetPasswordAPIRequestManager(withURL: resetPasswordURL, email: email, callback: { (error) -> Void in
-                completionHandler?(error == nil, error)
-        })
-        requestManager.begin()
+    func resetPassword(_ email: String, callback: StormpathSuccessCallback?) {
+        let resetPasswordURL = stormpath.configuration.APIURL.appendingPathComponent(Endpoints.forgot.rawValue)
+        
+        var request = APIRequest(method: .post, url: resetPasswordURL)
+        request.body = ["login": email]
+        request.send { (response, error) in
+            if response?.status == 200 {
+                callback?(true, nil)
+            } else {
+                callback?(false, StormpathError.APIResponseError)
+            }
+        }
+    }
+    
+    typealias LoginModelCallback = (LoginModel?, NSError?) -> Void
+    private var _loginModel: LoginModel?
+    
+    func loginModel(callback: LoginModelCallback? = nil) {
+        guard _loginModel == nil else {
+            DispatchQueue.main.async {
+                callback?(self._loginModel, nil)
+            }
+            return
+        }
+        let request = APIRequest(method: .get, url: stormpath.configuration.APIURL.appendingPathComponent(Endpoints.login.rawValue))
+        request.send { (response, error) in
+            if let response = response,
+                let loginModel = LoginModel(json: response.json) {
+                self._loginModel = loginModel
+                callback?(loginModel, nil)
+            } else {
+                callback?(nil, error ?? StormpathError.APIResponseError)
+            }
+        }
     }
 }

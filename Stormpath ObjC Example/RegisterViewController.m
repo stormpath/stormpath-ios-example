@@ -34,28 +34,24 @@
 
 - (IBAction)registerButtonPressed:(id)sender {
     // Create the registration model
-    RegistrationModel *newAccount = [[RegistrationModel alloc] initWithEmail:_emailTextField.text password:_passwordTextField.text];
+    SPHRegistrationForm *newAccount = [[SPHRegistrationForm alloc] initWithEmail:_emailTextField.text password:_passwordTextField.text];
     newAccount.givenName = _firstNameTextField.text;
     newAccount.surname = _lastNameTextField.text;
     
     // Register the new user
-    [[Stormpath sharedSession] register:newAccount completionHandler:^(Account * _Nullable account, NSError * _Nullable error) {
+    [[SPHStormpath sharedSession] registerWithAccount:newAccount callback:^(SPHAccount * _Nullable account, NSError * _Nullable error) {
         if(error) {
             [self showAlertWithTitle:@"Error" message:error.localizedDescription];
             return;
         }
         
         // If they need to verify their email, display alert
-        if(account.status == AccountStatusUnverified) {
+        if(account.status == SPHAccountStatusUnverified) {
             [self showAlertWithTitle:@"Registration Complete!" message:@"Please check your email to verify your account"];
         }
         // Otherwise, log them in & close registration window
         else {
-            [[Stormpath sharedSession] login:newAccount.email password:newAccount.password completionHandler:^(BOOL success, NSError * _Nullable error) {
-                if(success) {
-                    [self exit];
-                }
-            }];
+            [self exit];
         }
     }];
 }

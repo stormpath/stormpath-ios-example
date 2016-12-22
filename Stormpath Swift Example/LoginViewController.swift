@@ -27,15 +27,15 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func login(_ sender: AnyObject) {
-        Stormpath.sharedSession.login(emailTextField.text!, password: passwordTextField.text!, completionHandler: loginCompletionHandler)
+        Stormpath.sharedSession.login(username: emailTextField.text!, password: passwordTextField.text!, callback: loginCompletionHandler)
     }
     
     @IBAction func loginWithFacebook(_ sender: AnyObject) {
-        Stormpath.sharedSession.login(socialProvider: .facebook, completionHandler: loginCompletionHandler)
+        Stormpath.sharedSession.login(provider: .facebook, callback: loginCompletionHandler)
     }
     
     @IBAction func loginWithGoogle(_ sender: AnyObject) {
-        Stormpath.sharedSession.login(socialProvider: .google, completionHandler: loginCompletionHandler)
+        Stormpath.sharedSession.login(provider: .google, callback: loginCompletionHandler)
     }
     
     func loginCompletionHandler(_ success: Bool, error: NSError?) {
@@ -49,7 +49,7 @@ class LoginViewController: UIViewController {
     // Helper method that loads the /me endpoint (and optionally displays a
     // failure alert)
     fileprivate func loadAccount(andDisplayFailure failureAlert: Bool = false) {
-        Stormpath.sharedSession.me({ (account, error) -> Void in
+        Stormpath.sharedSession.me { (account, error) -> Void in
             guard let account = account , error == nil else {
                 if failureAlert {
                     self.showAlert(withTitle: "Error", message: error?.localizedDescription)
@@ -57,7 +57,7 @@ class LoginViewController: UIViewController {
                 return
             }
             self.showProfileForAccount(account)
-        })
+        }
     }
     
     // Helper method that takes an account object & shows the profile page
@@ -68,7 +68,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func resetPassword(_ sender: AnyObject) {
-        Stormpath.sharedSession.resetPassword(emailTextField.text!) { (success, error) -> Void in
+        Stormpath.sharedSession.resetPassword(email: emailTextField.text!) { (success, error) -> Void in
             if success {
                 self.showAlert(withTitle: "Success", message: "Password Reset Email Sent!")
             } else {

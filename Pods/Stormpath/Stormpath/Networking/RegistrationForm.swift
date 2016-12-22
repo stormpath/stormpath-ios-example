@@ -8,45 +8,12 @@
 
 import Foundation
 
-class RegistrationAPIRequestManager: APIRequestManager {
-    var account: RegistrationModel
-    var callback: StormpathAccountCallback
-    
-    init(withURL url: URL, newAccount account: RegistrationModel, callback: @escaping StormpathAccountCallback) {
-        self.account = account
-        self.callback = callback
-        super.init(withURL: url)
-    }
-    
-    override func prepareForRequest() {
-        request.httpMethod = "POST"
-        request.httpBody = account.jsonData
-    }
-    
-    override func requestDidFinish(_ data: Data, response: HTTPURLResponse) {
-        if let user = Account(fromJSON: data) {
-            performCallback(user, error: nil)
-        } else {
-            performCallback(StormpathError.APIResponseError)
-        }
-    }
-    
-    override func performCallback(_ error: NSError?) {
-        performCallback(nil, error: error)
-    }
-    
-    func performCallback(_ account: Account?, error: NSError?) {
-        DispatchQueue.main.async {
-            self.callback(account, error)
-        }
-    }
-}
-
 /**
  Model for the account registration form. The fields requested in the initializer 
  are required.
  */
-public class RegistrationModel: NSObject {
+@objc(SPHRegistrationForm)
+public class RegistrationForm: NSObject {
     
     /**
      Given (first) name of the user. Required by default, but can be turned off 
@@ -92,7 +59,7 @@ public class RegistrationModel: NSObject {
         self.password = password
     }
     
-    var jsonData: Data? {
+    var asDictionary: [String: Any] {
         var registrationDictionary: [String: Any] = customFields
         let accountDictionary = ["username": username, "email": email, "password": password, "givenName": givenName, "surname": surname]
         
@@ -102,6 +69,6 @@ public class RegistrationModel: NSObject {
             }
         }
         
-        return try? JSONSerialization.data(withJSONObject: registrationDictionary, options: [])
+        return registrationDictionary
     }
 }
